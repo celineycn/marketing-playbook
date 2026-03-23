@@ -1,0 +1,2271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SureThing Marketing Playbook - 46 Skills Report</title>
+<meta name="description" content="Complete marketing playbook for SureThing.io: 33 Corey Haines skills + 13 AI Marketing Claude skills.">
+<style>
+:root {
+  --bg: #0a0a0a; --surface: #141414; --surface2: #1a1a1a; --border: #2a2a2a;
+  --text: #e5e5e5; --text-dim: #888; --accent: #7c3aed; --accent-light: #a78bfa;
+  --red: #ef4444; --yellow: #eab308; --green: #22c55e; --blue: #3b82f6; --sidebar-w: 280px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; font-size: 15px; }
+.sidebar { position: fixed; top: 0; left: 0; width: var(--sidebar-w); height: 100vh; overflow-y: auto; background: var(--surface); border-right: 1px solid var(--border); z-index: 100; }
+.sidebar-header { padding: 20px 16px; border-bottom: 1px solid var(--border); position: sticky; top: 0; background: var(--surface); z-index: 1; }
+.sidebar-header a { color: var(--text); text-decoration: none; font-weight: 700; font-size: 16px; }
+.nav-section { padding: 8px 0; border-bottom: 1px solid var(--border); }
+.nav-section-title { padding: 8px 16px; color: var(--accent-light); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+.nav-category { padding: 4px 16px; color: var(--text-dim); font-size: 11px; font-weight: 600; text-transform: uppercase; margin-top: 8px; }
+.nav-link { display: block; padding: 4px 16px 4px 24px; color: var(--text-dim); text-decoration: none; font-size: 13px; transition: all 0.15s; border-left: 2px solid transparent; }
+.nav-link:hover { color: var(--text); background: var(--surface2); border-left-color: var(--accent); }
+.content { margin-left: var(--sidebar-w); max-width: 900px; padding: 0 40px 80px; }
+.hero { padding: 60px 0 40px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+.hero h1 { font-size: 36px; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 8px; background: linear-gradient(135deg, var(--accent-light), var(--blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.hero-sub { font-size: 18px; color: var(--text-dim); margin-bottom: 16px; }
+.hero-sub a { color: var(--accent-light); }
+.hero-meta { display: flex; gap: 8px; flex-wrap: wrap; }
+.badge { display: inline-block; padding: 4px 12px; background: var(--surface2); border: 1px solid var(--border); border-radius: 20px; font-size: 12px; color: var(--text-dim); }
+.summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 20px; }
+.summary-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+.summary-card h3 { font-size: 16px; margin-bottom: 12px; }
+.summary-card ul, .summary-card ol { padding-left: 20px; }
+.summary-card li { margin-bottom: 6px; font-size: 14px; color: var(--text-dim); }
+.score-card { text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.score { font-size: 72px; font-weight: 900; color: var(--yellow); line-height: 1; }
+.score span { font-size: 28px; color: var(--text-dim); }
+.score-label { font-size: 14px; color: var(--text-dim); margin-top: 8px; }
+.section { margin-bottom: 40px; }
+.section h2 { font-size: 24px; font-weight: 700; margin-bottom: 16px; padding-top: 20px; }
+.section-divider { border-top: 3px solid var(--accent); padding-top: 40px; margin-top: 60px; }
+.category-header { margin-top: 40px; margin-bottom: 8px; }
+.category-header h3 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent-light); padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+.skill-section { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 28px; margin-bottom: 20px; }
+.skill-title { font-size: 20px; font-weight: 700; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
+.skill-badge { font-size: 11px; padding: 3px 10px; background: var(--accent); color: white; border-radius: 20px; font-weight: 500; }
+.badge-claude { background: var(--blue); }
+.skill-section h2 { font-size: 20px; margin: 24px 0 12px; font-weight: 700; }
+.skill-section h3 { font-size: 16px; margin: 20px 0 8px; font-weight: 600; color: var(--accent-light); }
+.skill-section h4 { font-size: 14px; margin: 16px 0 8px; font-weight: 600; }
+.skill-section p { margin-bottom: 10px; color: var(--text-dim); }
+.skill-section strong { color: var(--text); }
+.skill-section ul, .skill-section ol { padding-left: 20px; margin-bottom: 12px; }
+.skill-section li { margin-bottom: 4px; color: var(--text-dim); }
+.skill-section blockquote { border-left: 3px solid var(--accent); padding: 8px 16px; margin: 12px 0; background: rgba(124,58,237,0.05); border-radius: 0 8px 8px 0; color: var(--text); font-style: italic; }
+.skill-section pre { background: #0d0d0d; border: 1px solid var(--border); border-radius: 8px; padding: 16px; overflow-x: auto; margin: 12px 0; font-size: 13px; }
+.skill-section code { font-family: 'SF Mono','Fira Code',monospace; font-size: 13px; }
+.skill-section p code, .skill-section li code { background: var(--surface2); padding: 2px 6px; border-radius: 4px; }
+.skill-section hr { border: none; border-top: 1px solid var(--border); margin: 20px 0; }
+.table-wrap { overflow-x: auto; margin: 12px 0; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; padding: 10px 12px; background: var(--surface2); border-bottom: 2px solid var(--border); font-weight: 600; color: var(--text); white-space: nowrap; }
+td { padding: 8px 12px; border-bottom: 1px solid var(--border); color: var(--text-dim); }
+tr:hover td { background: rgba(255,255,255,0.02); }
+a { color: var(--accent-light); text-decoration: none; }
+a:hover { text-decoration: underline; }
+@media (max-width: 768px) { .sidebar { display: none; } .content { margin-left: 0; padding: 0 16px 60px; } .hero h1 { font-size: 24px; } .summary-grid { grid-template-columns: 1fr; } .score { font-size: 48px; } }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+html { scroll-behavior: smooth; }
+</style>
+</head>
+<body>
+<nav class="sidebar" id="sidebar">
+<div class="sidebar-header"><a href="#top">SureThing Marketing</a></div>
+<div class="nav-section"><div class="nav-section-title">Overview</div>
+<a class="nav-link" href="#executive-summary">Executive Summary</a>
+<a class="nav-link" href="#scores">Scores & Gaps</a>
+</div>
+<div class="nav-section"><div class="nav-section-title">Corey Haines Skills (33)</div>
+<div class="nav-category">Foundation</div>
+<a class="nav-link" href="#corey-product-marketing-context">Product Marketing Context</a>
+<div class="nav-category">SEO & Content</div>
+<a class="nav-link" href="#corey-seo-audit">Seo Audit</a>
+<a class="nav-link" href="#corey-ai-seo">Ai Seo</a>
+<a class="nav-link" href="#corey-site-architecture">Site Architecture</a>
+<a class="nav-link" href="#corey-programmatic-seo">Programmatic Seo</a>
+<a class="nav-link" href="#corey-schema-markup">Schema Markup</a>
+<a class="nav-link" href="#corey-content-strategy">Content Strategy</a>
+<div class="nav-category">CRO & Conversion</div>
+<a class="nav-link" href="#corey-page-cro">Page Cro</a>
+<a class="nav-link" href="#corey-signup-flow-cro">Signup Flow Cro</a>
+<a class="nav-link" href="#corey-onboarding-cro">Onboarding Cro</a>
+<a class="nav-link" href="#corey-form-cro">Form Cro</a>
+<a class="nav-link" href="#corey-popup-cro">Popup Cro</a>
+<a class="nav-link" href="#corey-paywall-upgrade-cro">Paywall Upgrade Cro</a>
+<div class="nav-category">Copy & Messaging</div>
+<a class="nav-link" href="#corey-copywriting">Copywriting</a>
+<a class="nav-link" href="#corey-copy-editing">Copy Editing</a>
+<a class="nav-link" href="#corey-cold-email">Cold Email</a>
+<a class="nav-link" href="#corey-email-sequence">Email Sequence</a>
+<a class="nav-link" href="#corey-social-content">Social Content</a>
+<div class="nav-category">Paid & Analytics</div>
+<a class="nav-link" href="#corey-paid-ads">Paid Ads</a>
+<a class="nav-link" href="#corey-ad-creative">Ad Creative</a>
+<a class="nav-link" href="#corey-ab-test-setup">Ab Test Setup</a>
+<a class="nav-link" href="#corey-analytics-tracking">Analytics Tracking</a>
+<div class="nav-category">Growth & Retention</div>
+<a class="nav-link" href="#corey-referral-program">Referral Program</a>
+<a class="nav-link" href="#corey-free-tool-strategy">Free Tool Strategy</a>
+<a class="nav-link" href="#corey-churn-prevention">Churn Prevention</a>
+<a class="nav-link" href="#corey-marketing-ideas">Marketing Ideas</a>
+<a class="nav-link" href="#corey-marketing-psychology">Marketing Psychology</a>
+<a class="nav-link" href="#corey-lead-magnets">Lead Magnets</a>
+<div class="nav-category">Sales & GTM</div>
+<a class="nav-link" href="#corey-revops">Revops</a>
+<a class="nav-link" href="#corey-sales-enablement">Sales Enablement</a>
+<a class="nav-link" href="#corey-launch-strategy">Launch Strategy</a>
+<a class="nav-link" href="#corey-pricing-strategy">Pricing Strategy</a>
+<a class="nav-link" href="#corey-competitor-alternatives">Competitor Alternatives</a>
+</div>
+<div class="nav-section"><div class="nav-section-title">AI Marketing Claude (13)</div>
+<a class="nav-link" href="#claude-01-marketing-audit">Marketing Audit</a>
+<a class="nav-link" href="#claude-02-copy-analysis">Copy Analysis</a>
+<a class="nav-link" href="#claude-03-seo-audit">SEO Audit</a>
+<a class="nav-link" href="#claude-04-brand-voice">Brand Voice</a>
+<a class="nav-link" href="#claude-05-landing-cro">Landing Page CRO</a>
+<a class="nav-link" href="#claude-06-funnel-analysis">Funnel Analysis</a>
+<a class="nav-link" href="#claude-07-competitor-intelligence">Competitor Intelligence</a>
+<a class="nav-link" href="#claude-08-ad-campaigns">Ad Campaigns</a>
+<a class="nav-link" href="#claude-09-email-sequences">Email Sequences</a>
+<a class="nav-link" href="#claude-10-social-calendar">Social Calendar</a>
+<a class="nav-link" href="#claude-11-launch-playbook">Launch Playbook</a>
+<a class="nav-link" href="#claude-12-proposal-template">Proposal Template</a>
+<a class="nav-link" href="#claude-13-marketing-report">Marketing Report</a>
+</div>
+</nav>
+
+<main class="content" id="content">
+
+<div class="hero" id="top">
+    <h1>SureThing Marketing Playbook</h1>
+    <p class="hero-sub">46 marketing skills executed against <a href="https://surething.io">surething.io</a></p>
+    <div class="hero-meta">
+        <span class="badge">33 Corey Haines Skills</span>
+        <span class="badge">13 AI Marketing Claude Skills</span>
+        <span class="badge">March 23, 2026</span>
+    </div>
+</div>
+
+<section id="executive-summary" class="section">
+<h2>Executive Summary</h2>
+<div class="summary-grid">
+    <div class="summary-card score-card">
+        <div class="score">52<span>/100</span></div>
+        <div class="score-label">Overall Marketing Score</div>
+    </div>
+    <div class="summary-card">
+        <h3>Critical Gaps</h3>
+        <ul>
+            <li>Homepage = login page, not marketing page</li>
+            <li>Zero analytics/tracking installed</li>
+            <li>Zero social proof (no testimonials, no user count)</li>
+            <li>Zero schema markup</li>
+            <li>Empty sitemap (0 URLs)</li>
+        </ul>
+    </div>
+    <div class="summary-card">
+        <h3>Strengths</h3>
+        <ul>
+            <li>Social distribution moat (all major platforms)</li>
+            <li>Strong competitive differentiation vs Claude Cowork</li>
+            <li>Google CASA Tier 2 + SOC II certified</li>
+            <li>Credit-based freemium (proven model)</li>
+            <li>Multi-platform (Desktop, Mobile, Web)</li>
+        </ul>
+    </div>
+    <div class="summary-card">
+        <h3>Top 5 Actions</h3>
+        <ol>
+            <li>Install GA4 + GTM + conversion tracking</li>
+            <li>Rebuild homepage as real marketing page</li>
+            <li>Add social proof (testimonials, user count)</li>
+            <li>Create 5 feature pages + 5 comparison pages</li>
+            <li>Implement schema markup</li>
+        </ol>
+    </div>
+</div>
+</section>
+
+<section id="scores" class="section">
+<h2>Scores & Gap Analysis</h2>
+<div class="table-wrap"><table>
+    <thead><tr><th>Category</th><th>Score</th><th>Status</th><th>Key Issue</th></tr></thead>
+    <tbody>
+    <tr><td>Homepage CRO</td><td>25/100</td><td>Critical</td><td>Not a marketing page</td></tr>
+    <tr><td>SEO Technical</td><td>36/100</td><td>Critical</td><td>Empty sitemap, no canonical, duplicate H1</td></tr>
+    <tr><td>Analytics</td><td>0/100</td><td>Critical</td><td>Zero tracking deployed</td></tr>
+    <tr><td>Schema Markup</td><td>0/100</td><td>Critical</td><td>No structured data at all</td></tr>
+    <tr><td>Social Proof</td><td>5/100</td><td>Critical</td><td>Only CASA/SOC II badges</td></tr>
+    <tr><td>Content Depth</td><td>15/100</td><td>Critical</td><td>~314 words, no feature pages, no blog</td></tr>
+    <tr><td>Copy Quality</td><td>45/100</td><td>Needs Work</td><td>H1 good, rest is compliance-first</td></tr>
+    <tr><td>Pricing Page</td><td>50/100</td><td>Needs Work</td><td>Credit model unexplained</td></tr>
+    <tr><td>SEO Foundations</td><td>65/100</td><td>OK</td><td>Good title/meta, needs content + links</td></tr>
+    <tr><td>Social Readiness</td><td>70/100</td><td>Good</td><td>Connected to all platforms</td></tr>
+    <tr><td>Competitive Position</td><td>75/100</td><td>Strong</td><td>Clear differentiation</td></tr>
+    </tbody>
+</table></div>
+</section>
+<section class="section section-divider"><h2>Part 1: Corey Haines Marketing Skills (33)</h2><p>Source: <a href="https://github.com/coreyhaines31/marketingskills">coreyhaines31/marketingskills</a> (15K+ stars)</p></section>
+<div class="category-header"><h3>Foundation</h3></div>
+<section id="corey-product-marketing-context" class="skill-section">
+<h2 class="skill-title">Product Marketing Context <span class="skill-badge">Corey Haines</span></h2>
+
+<p>✅ <strong>Context document created at <code>.agents/product-marketing-context.md</code></strong></p>
+
+<p>All 12 sections populated with SureThing's actual product data, competitive positioning, and brand voice. This context document will be referenced by all other skills automatically.</p>
+
+<p>See the full document in the project's <code>.agents/</code> directory. Key highlights:</p>
+
+<ul>
+<li><strong>One-liner:</strong> "The autonomous AI agent that remembers you and works while you sleep."</li>
+<li><strong>Category:</strong> AI Agent Platform / Autonomous AI Assistant</li>
+<li><strong>ICP:</strong> Solo founders, indie hackers, solopreneurs, creator-operators</li>
+<li><strong>Core Problem:</strong> You're the single-threaded bottleneck in your own AI stack</li>
+<li><strong>Key Differentiators:</strong> Persistent memory, autonomous execution, social media distribution, self-evolving agents, installable playbooks, human-as-chairman</li>
+<li><strong>Brand Voice:</strong> Confident, direct, provocative, warm-technical. Nick Spisak style.</li>
+<li><strong>Business Goal:</strong> Category-defining AI agent platform for 2.0 launch</li>
+</ul>
+</section>
+<div class="category-header"><h3>SEO & Content</h3></div>
+<section id="corey-seo-audit" class="skill-section">
+<h2 class="skill-title">Seo Audit <span class="skill-badge">Corey Haines</span></h2>
+
+<h2 id="site-context">Site Context</h2>
+<ul>
+<li><strong>Type:</strong> SaaS marketing site</li>
+<li><strong>SEO goal:</strong> Organic traffic for brand + category keywords</li>
+<li><strong>Priority keywords:</strong> AI agent, autonomous AI assistant, AI for founders, AI email assistant, AI social media</li>
+<li><strong>Current organic traffic:</strong> Pre-launch (minimal)</li>
+<li><strong>Scope:</strong> Full site audit (technical + on-page)</li>
+</ul>
+
+<hr>
+
+<h2 id="technical-seo-audit">Technical SEO Audit</h2>
+
+<h3 id="crawlability-score-55-100">Crawlability — Score: 55/100</h3>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Check</th><th>Status</th><th>Issue</th></tr></thead><tbody>
+<tr><td>robots.txt exists</td><td>✅ Yes</td><td>But no sitemap reference</td></tr>
+<tr><td>Sitemap exists</td><td>⚠️ Yes, empty</td><td>sitemap.xml has 0 URLs</td></tr>
+<tr><td>Canonical URLs</td><td>❌ Missing</td><td>No <code><link rel="canonical"></code> on any page</td></tr>
+<tr><td>Internal links</td><td>❌ Poor</td><td>Only 4 internal links total</td></tr>
+<tr><td>External links</td><td>❌ None</td><td>0 external links (no outbound authority signals)</td></tr>
+<tr><td>Duplicate content</td><td>⚠️ Duplicate H1</td><td>Same H1 text appears twice in DOM</td></tr>
+</tbody></table></div>
+
+<p><strong>Critical fixes:</strong></p>
+<ul>
+<li>Add <code>Sitemap: https://surething.io/sitemap.xml</code> to robots.txt</li>
+<li>Populate sitemap.xml with all pages (homepage, pricing, any others)</li>
+<li>Add <code><link rel="canonical" href="..."></code> to every page</li>
+<li>Fix duplicate H1 — keep one, remove the other</li>
+</ul>
+
+<h3 id="indexation-score-40-100">Indexation — Score: 40/100</h3>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Check</th><th>Status</th></tr></thead><tbody>
+<tr><td>Site indexable</td><td>✅ Yes (no noindex detected)</td></tr>
+<tr><td>Pages in sitemap</td><td>❌ 0 URLs</td></tr>
+<tr><td>Estimated indexable pages</td><td>~5-10 (homepage, pricing, maybe auth pages)</td></tr>
+<tr><td>Google Search Console</td><td>⚠️ Unknown if connected</td></tr>
+</tbody></table></div>
+
+<p><strong>Critical fix:</strong> Submit sitemap to Google Search Console. Add all public pages.</p>
+
+<h3 id="site-speed-core-web-vitals-score-70-100-estimated">Site Speed & Core Web Vitals — Score: 70/100 (estimated)</h3>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Signal</th><th>Status</th></tr></thead><tbody>
+<tr><td>Framework</td><td>Next.js (React) — good for performance with SSR/SSG</td></tr>
+<tr><td>Scripts loaded</td><td>23 (moderate — could be reduced)</td></tr>
+<tr><td>Images</td><td>5 total, 2 lazy-loaded, all have alt text ✅</td></tr>
+<tr><td>Viewport meta</td><td>✅ Present</td></tr>
+</tbody></table></div>
+
+<p><strong>Recommendation:</strong> Run Lighthouse audit. Reduce JS bundle if possible. Ensure critical CSS is inlined.</p>
+
+<h3 id="security-https-score-95-100">Security & HTTPS — Score: 95/100</h3>
+
+<p>✅ HTTPS enforced</p>
+<p>✅ HSTS likely (Vercel default)</p>
+<p>✅ No mixed content detected</p>
+
+<hr>
+
+<h2 id="on-page-seo-audit">On-Page SEO Audit</h2>
+
+<h3 id="title-tags-score-80-100">Title Tags — Score: 80/100</h3>
+
+<p><strong>Homepage:</strong> "SureThing - Autonomous AI Agent | The Extension of Self" (55 chars)</p>
+<ul>
+<li>✅ Good length (under 60 chars)</li>
+<li>✅ Brand name first</li>
+<li>✅ Primary keyword "Autonomous AI Agent" present</li>
+<li>⚠️ "The Extension of Self" is branding, not SEO value — consider replacing with category keyword</li>
+</ul>
+
+<p><strong>Recommended:</strong> "SureThing — AI Agent That Runs Your Business Autonomously | 1000+ Apps"</p>
+
+<h3 id="meta-descriptions-score-75-100">Meta Descriptions — Score: 75/100</h3>
+
+<p><strong>Homepage:</strong> "The autonomous agent that remembers who you are and works while you sleep. 1000+ apps. Persistent memory. 24/7 execution. One person should be enough." (155 chars)</p>
+<ul>
+<li>✅ Good length</li>
+<li>✅ Compelling copy</li>
+<li>✅ Keywords present</li>
+<li>⚠️ Could include CTA ("Start free")</li>
+</ul>
+
+<p><strong>Recommended:</strong> "SureThing: the AI agent that runs your email, social media, and growth ops autonomously. Persistent memory. 1,000+ apps. Works 24/7. Start free today."</p>
+
+<h3 id="heading-structure-score-40-100">Heading Structure — Score: 40/100</h3>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Issue</th><th>Details</th></tr></thead><tbody>
+<tr><td>Duplicate H1</td><td>❌ Same text appears twice</td></tr>
+<tr><td>H1 count</td><td>2 (should be exactly 1)</td></tr>
+<tr><td>H2 count</td><td>1 ("Thousands of Integrations")</td></tr>
+<tr><td>H3-H6</td><td>0</td></tr>
+<tr><td>Heading hierarchy</td><td>❌ Flat — no content depth</td></tr>
+</tbody></table></div>
+
+<p><strong>Fix:</strong> Single H1. Add H2s for each page section. Use H3s for subsections.</p>
+
+<h3 id="content-quality-score-25-100">Content Quality — Score: 25/100</h3>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Metric</th><th>Value</th><th>Benchmark</th></tr></thead><tbody>
+<tr><td>Word count</td><td>~314</td><td>1,000-2,000 for SaaS homepage</td></tr>
+<tr><td>Content sections</td><td>2</td><td>6-10 for SaaS homepage</td></tr>
+<tr><td>Internal links</td><td>4</td><td>15-30 for SaaS homepage</td></tr>
+<tr><td>Images with alt</td><td>5/5 ✅</td><td>Good</td></tr>
+<tr><td>E-E-A-T signals</td><td>None</td><td>Needs author, expertise, trust</td></tr>
+</tbody></table></div>
+
+<hr>
+
+<h2 id="content-strategy-gaps">Content Strategy Gaps</h2>
+
+<h3 id="missing-pages-critical-for-seo">Missing Pages (Critical for SEO)</h3>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Page</th><th>Target Keywords</th><th>Priority</th></tr></thead><tbody>
+<tr><td>/features</td><td>AI agent features, autonomous AI capabilities</td><td>🔴 High</td></tr>
+<tr><td>/features/email</td><td>AI email assistant, email automation AI</td><td>🔴 High</td></tr>
+<tr><td>/features/social-media</td><td>AI social media manager, automated social posting</td><td>🔴 High</td></tr>
+<tr><td>/features/memory</td><td>AI with memory, persistent AI agent</td><td>🟡 Medium</td></tr>
+<tr><td>/blog</td><td>(content hub for organic traffic)</td><td>🔴 High</td></tr>
+<tr><td>/vs/lindy</td><td>SureThing vs Lindy, Lindy alternative</td><td>🟡 Medium</td></tr>
+<tr><td>/vs/chatgpt</td><td>AI agent vs ChatGPT</td><td>🟡 Medium</td></tr>
+<tr><td>/vs/zapier</td><td>SureThing vs Zapier, intelligent automation</td><td>🟡 Medium</td></tr>
+<tr><td>/use-cases</td><td>AI agent use cases, AI for founders</td><td>🟡 Medium</td></tr>
+<tr><td>/about</td><td>About SureThing, team, mission</td><td>🟡 Medium</td></tr>
+</tbody></table></div>
+
+<h3 id="keyword-opportunity-map">Keyword Opportunity Map</h3>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Cluster</th><th>Example Keywords</th><th>Volume Est.</th><th>Competition</th><th>Priority</th></tr></thead><tbody>
+<tr><td>AI agent</td><td>AI agent platform, personal AI agent, AI business agent</td><td>High</td><td>Medium</td><td>🔴</td></tr>
+<tr><td>Autonomous AI</td><td>autonomous AI assistant, AI that works autonomously</td><td>Medium</td><td>Low</td><td>🔴</td></tr>
+<tr><td>AI email</td><td>AI email assistant, AI email management, auto-reply AI</td><td>High</td><td>High</td><td>🟡</td></tr>
+<tr><td>AI social media</td><td>AI social media manager, automated posting AI</td><td>Medium</td><td>Medium</td><td>🔴</td></tr>
+<tr><td>AI for founders</td><td>AI tools for founders, solopreneur AI, one-person company AI</td><td>Medium</td><td>Low</td><td>🔴</td></tr>
+<tr><td>Competitor alt</td><td>Lindy alternative, Zapier alternative AI, ChatGPT alternative</td><td>Medium</td><td>Low</td><td>🟡</td></tr>
+</tbody></table></div>
+
+<hr>
+
+<h2 id="schema-structured-data-score-0-100">Schema / Structured Data — Score: 0/100</h2>
+
+<p>❌ No schema markup detected at all.</p>
+
+<p><strong>Must implement:</strong></p>
+
+<ul>
+<li><strong>Organization</strong> — brand, logo, social profiles</li>
+<li><strong>WebSite</strong> — site name, search action</li>
+<li><strong>SoftwareApplication</strong> — product details, pricing, rating</li>
+<li><strong>FAQPage</strong> — pricing FAQ (when FAQ section is added)</li>
+<li><strong>Offer</strong> — pricing tiers on /pricing page</li>
+<li><strong>BreadcrumbList</strong> — site navigation path</li>
+</ul>
+
+<hr>
+
+<h2 id="authority-links-score-15-100">Authority & Links — Score: 15/100</h2>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Metric</th><th>Status</th></tr></thead><tbody>
+<tr><td>Internal links from homepage</td><td>4 (very low)</td></tr>
+<tr><td>External outbound links</td><td>0 (no authority signals)</td></tr>
+<tr><td>Social profiles linked</td><td>0</td></tr>
+<tr><td>Blog / content for backlinks</td><td>None</td></tr>
+<tr><td>Press / media mentions</td><td>Unknown</td></tr>
+</tbody></table></div>
+
+<hr>
+
+<h2 id="seo-audit-summary">SEO Audit Summary</h2>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Category</th><th>Score</th><th>Priority</th></tr></thead><tbody>
+<tr><td>Crawlability</td><td>55/100</td><td>🔴 Fix sitemap, canonical, robots.txt</td></tr>
+<tr><td>Indexation</td><td>40/100</td><td>🔴 Submit sitemap, GSC setup</td></tr>
+<tr><td>Site Speed</td><td>70/100</td><td>🟡 Audit with Lighthouse</td></tr>
+<tr><td>On-Page</td><td>50/100</td><td>🔴 Fix headings, add content depth</td></tr>
+<tr><td>Content Quality</td><td>25/100</td><td>🔴 Add feature pages, blog, comparisons</td></tr>
+<tr><td>Schema</td><td>0/100</td><td>🔴 Implement all recommended types</td></tr>
+<tr><td>Authority</td><td>15/100</td><td>🟡 Build content-first link strategy</td></tr>
+<tr><td><strong>Overall SEO Score</strong></td><td><strong>36/100</strong></td><td><strong>🔴 Critical</strong></td></tr>
+</tbody></table></div>
+
+<h3 id="priority-action-plan">Priority Action Plan</h3>
+
+<ul>
+<li><strong>This week:</strong> Fix duplicate H1, add canonical URLs, populate sitemap, add sitemap to robots.txt</li>
+<li><strong>Next 2 weeks:</strong> Add schema markup (Organization, SoftwareApplication, WebSite), connect GSC</li>
+<li><strong>This month:</strong> Create 3 feature pages, 2 comparison pages, launch blog with 5 articles</li>
+<li><strong>This quarter:</strong> Programmatic SEO for integration pages, 20+ blog posts, backlink campaign</li>
+</ul>
+</section>
+<section id="corey-ai-seo" class="skill-section">
+<h2 class="skill-title">Ai Seo <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="ai-visibility-audit">AI Visibility Audit</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Query</th><th>AI Citation?</th><th>Action</th></tr></thead><tbody>
+<tr><td>"best AI agent for business"</td><td>❌ Not cited</td><td>Create authoritative content</td></tr>
+<tr><td>"AI email management tool"</td><td>❌ Not cited</td><td>Publish definitive guide</td></tr>
+<tr><td>"autonomous AI assistant"</td><td>❌ Not cited</td><td>Own the category definition</td></tr>
+<tr><td>"AI social media manager"</td><td>❌ Not cited</td><td>Feature page + blog post</td></tr>
+</tbody></table></div>
+
+<h2 id="three-pillars">Three Pillars</h2>
+<h3 id="1-be-the-definitive-source">1. Be the Definitive Source</h3>
+<ul>
+<li>Publish "What is an AI Agent?" as THE authoritative reference</li>
+<li>Create glossary of AI agent terms (L2, L3, agent swarm, etc.)</li>
+<li>Structured data to help LLMs parse content</li>
+</ul>
+
+<h3 id="2-make-content-llm-extractable">2. Make Content LLM-Extractable</h3>
+<ul>
+<li>Clear H1/H2/H3 hierarchy</li>
+<li>FAQ sections with direct Q&A format</li>
+<li>Comparison tables (easy for LLMs to cite)</li>
+<li>Data-backed claims with sources</li>
+</ul>
+
+<h3 id="3-earn-ai-citations">3. Earn AI Citations</h3>
+<ul>
+<li>Get mentioned on high-authority sites (Product Hunt, tech blogs)</li>
+<li>Wikipedia consideration (once notable)</li>
+<li>Open-source contributions (GitHub presence)</li>
+<li>Be cited in AI tool directories</li>
+</ul>
+
+<h2 id="ai-bot-access-ensure-robots-txt-allows-chatgpt-user-anthropic-ai-google-extended">AI Bot Access: Ensure robots.txt allows ChatGPT-User, Anthropic-AI, Google-Extended</h2>
+<h2 id="schema-add-softwareapplication-faqpage-structured-data-helps-llm-extraction">Schema: Add SoftwareApplication, FAQPage — structured data helps LLM extraction</h2></section>
+<section id="corey-site-architecture" class="skill-section">
+<h2 class="skill-title">Site Architecture <span class="skill-badge">Corey Haines</span></h2>
+
+<h2 id="current-state">Current State</h2>
+<ul>
+<li><strong>Site type:</strong> SaaS marketing site (hybrid SaaS + content planned)</li>
+<li><strong>Current pages:</strong> ~3-5 (homepage, pricing, auth)</li>
+<li><strong>Current depth:</strong> 1 level (everything off root)</li>
+<li><strong>Known issues:</strong> No blog, no feature pages, no comparison pages, only 4 internal links</li>
+</ul>
+
+<h2 id="recommended-site-architecture">Recommended Site Architecture</h2>
+
+<pre><code>
+surething.io/
+├── / (Homepage)
+├── /features/
+│   ├── /features/email (AI Email Management)
+│   ├── /features/calendar (AI Calendar & Scheduling)
+│   ├── /features/social-media (Social Media Distribution)
+│   ├── /features/memory (Persistent Memory)
+│   ├── /features/agent-swarm (Agent Swarm)
+│   └── /features/playbooks (Installable Playbooks)
+├── /integrations/ (1000+ App Connections)
+│   ├── /integrations/gmail
+│   ├── /integrations/slack
+│   ├── /integrations/twitter
+│   ├── /integrations/notion
+│   └── /integrations/[app-name] (programmatic SEO — 100+ pages)
+├── /skills/ (Skill Marketplace / Catalog)
+│   ├── /skills/[skill-name] (individual skill pages)
+│   └── /skills/categories/[category]
+├── /pricing/ (Pricing & Plans)
+├── /vs/
+│   ├── /vs/lindy (SureThing vs Lindy)
+│   ├── /vs/chatgpt (SureThing vs ChatGPT)
+│   ├── /vs/zapier (SureThing vs Zapier)
+│   ├── /vs/okara (SureThing vs Okara)
+│   └── /vs/claude-cowork (SureThing vs Claude Cowork)
+├── /use-cases/
+│   ├── /use-cases/solo-founders
+│   ├── /use-cases/indie-hackers
+│   ├── /use-cases/creators
+│   └── /use-cases/agencies
+├── /blog/
+│   ├── /blog/[slug] (individual posts)
+│   └── /blog/category/[category]
+├── /about/ (About / Team)
+├── /changelog/ (Product Updates)
+├── /docs/ (Documentation — links to external docs or embedded)
+├── /security/ (Security & Compliance)
+├── /terms/ (Terms of Service)
+├── /privacy/ (Privacy Policy)
+└── /contact/ (Contact / Support)
+</code></pre>
+
+<h2 id="navigation-design">Navigation Design</h2>
+
+<h3 id="header-navigation-primary">Header Navigation (Primary)</h3>
+
+<pre><code>
+[Logo: SureThing]  Features ▾  Skills  Integrations  Pricing  Blog    [Start Free →]
+                    ├── Email Management
+                    ├── Social Distribution
+                    ├── Agent Swarm
+                    ├── Installable Playbooks
+                    ├── Persistent Memory
+                    └── All Features →
+</code></pre>
+
+<h3 id="footer-organization">Footer Organization</h3>
+
+<pre><code>
+Product              Resources           Company            Legal
+─────────            ─────────           ─────────          ─────────
+Features             Blog                About              Terms
+Skills               Documentation       Changelog          Privacy
+Integrations         Use Cases           Contact            Security
+Pricing              vs Alternatives     Careers
+                     Status
+
+[Social Icons: Twitter | LinkedIn | GitHub | Discord | YouTube]
+
+© 2026 SureThing. All rights reserved.
+Google CASA Tier 2 · SOC II Certified
+</code></pre>
+
+<h2 id="url-structure-rules">URL Structure Rules</h2>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Pattern</th><th>Example</th><th>Notes</th></tr></thead><tbody>
+<tr><td>Feature pages</td><td><code>/features/email</code></td><td>Lowercase, hyphenated</td></tr>
+<tr><td>Integration pages</td><td><code>/integrations/slack</code></td><td>Match app name exactly</td></tr>
+<tr><td>Skill pages</td><td><code>/skills/seo-audit</code></td><td>Match skill slug</td></tr>
+<tr><td>Comparison pages</td><td><code>/vs/lindy</code></td><td>Short, clear competitor name</td></tr>
+<tr><td>Blog posts</td><td><code>/blog/how-to-run-company-ai</code></td><td>SEO-friendly slugs</td></tr>
+<tr><td>Use cases</td><td><code>/use-cases/solo-founders</code></td><td>Audience-based</td></tr>
+</tbody></table></div>
+
+<h2 id="internal-linking-strategy">Internal Linking Strategy</h2>
+
+<h3 id="hub-and-spoke-model">Hub-and-Spoke Model</h3>
+<ul>
+<li><strong>Hub:</strong> Homepage links to all major sections</li>
+<li><strong>Spokes:</strong> Feature pages link to related integrations and use cases</li>
+<li><strong>Cross-links:</strong> Blog posts link to relevant feature pages; comparison pages link to features</li>
+</ul>
+
+<h3 id="linking-rules">Linking Rules</h3>
+<ul>
+<li>Every page links back to homepage (via logo + breadcrumb)</li>
+<li>Every feature page links to pricing</li>
+<li>Every blog post includes contextual links to 2-3 feature pages</li>
+<li>Comparison pages link to the specific features that differentiate</li>
+<li>Integration pages link to the parent features they enable</li>
+</ul>
+
+<h3 id="breadcrumb-pattern">Breadcrumb Pattern</h3>
+<pre><code>
+Home &gt; Features &gt; Email Management
+Home &gt; Blog &gt; How to Run a Company with AI
+Home &gt; vs &gt; SureThing vs Lindy
+</code></pre>
+
+<h2 id="programmatic-seo-opportunity">Programmatic SEO Opportunity</h2>
+
+<h3 id="integration-pages-100-pages">Integration Pages (~100+ pages)</h3>
+
+<p><strong>Template:</strong> <code>/integrations/[app-name]</code></p>
+<p><strong>Data needed per page:</strong> App name, logo, category, description, key actions, connection method</p>
+<p><strong>Unique value:</strong> "How SureThing's autonomous agent uses [App] differently than manual automation"</p>
+
+<h3 id="skill-pages-50-pages">Skill Pages (~50+ pages)</h3>
+
+<p><strong>Template:</strong> <code>/skills/[skill-name]</code></p>
+<p><strong>Data needed:</strong> Skill name, category, description, what it does, author, usage stats</p>
+<p><strong>Unique value:</strong> "Install this skill in one click. See what other founders are running."</p>
+
+<h2 id="implementation-priority">Implementation Priority</h2>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Phase</th><th>Pages</th><th>Timeline</th></tr></thead><tbody>
+<tr><td>Phase 1</td><td>Homepage rebuild, 3 feature pages, pricing polish</td><td>Week 1-2</td></tr>
+<tr><td>Phase 2</td><td>3 comparison pages, 2 use case pages, about</td><td>Week 3-4</td></tr>
+<tr><td>Phase 3</td><td>Blog (5 initial posts), changelog</td><td>Month 2</td></tr>
+<tr><td>Phase 4</td><td>Integration pages (programmatic), skill pages</td><td>Month 3</td></tr>
+<tr><td>Phase 5</td><td>Documentation, additional blog content</td><td>Ongoing</td></tr>
+</tbody></table></div>
+</section>
+<section id="corey-programmatic-seo" class="skill-section">
+<h2 class="skill-title">Programmatic Seo <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="opportunity-integration-pages-100-pages">Opportunity: Integration Pages (100+ pages)</h2>
+
+<h3 id="pattern-integrations-app-name">Pattern: /integrations/[app-name]</h3>
+<p><strong>Keywords:</strong> "surething [app] integration", "[app] AI automation", "connect [app] to AI agent"</p>
+<p><strong>Template:</strong></p>
+<pre><code>
+# SureThing + {App Name}
+## What SureThing Does With {App}
+[3-4 specific autonomous workflows]
+## How to Connect
+[Step-by-step with screenshots]
+## Example Workflows
+[2-3 concrete examples]
+## Why SureThing + {App} &gt; {App} + Zapier
+[Intelligent automation vs rule-based]
+## Start Free →
+</code></pre>
+<p><strong>Data needed:</strong> App name, logo, category, key actions, connection method</p>
+<p><strong>Unique value per page:</strong> Specific AI workflows for each app (not generic "connect A to B")</p>
+
+<h2 id="opportunity-skill-pages-50-pages">Opportunity: Skill Pages (50+ pages)</h2>
+
+<h3 id="pattern-skills-skill-name">Pattern: /skills/[skill-name]</h3>
+<p><strong>Keywords:</strong> "AI [skill] playbook", "[skill] automation", "AI growth [skill]"</p>
+<p><strong>Template:</strong></p>
+<pre><code>
+# {Skill Name}
+## What This Skill Does
+## Who It's For
+## Install in One Click → [CTA]
+## What Happens After Install
+## Results from Other Founders
+## Related Skills
+</code></pre>
+
+<h2 id="opportunity-use-case-pages-10-20-pages">Opportunity: Use Case Pages (10-20 pages)</h2>
+
+<h3 id="pattern-use-cases-industry-or-role">Pattern: /use-cases/[industry-or-role]</h3>
+<p><strong>Keywords:</strong> "AI for [role]", "AI agent for [industry]"</p>
+<p><strong>Examples:</strong> solo-founders, agencies, creators, saas, ecommerce</p>
+
+<h2 id="implementation-priority">Implementation Priority</h2>
+<ul>
+<li>Top 20 integration pages (Gmail, Slack, Twitter, LinkedIn, Notion, Stripe...) — Month 1</li>
+<li>Top 10 skill pages — Month 2</li>
+<li>Remaining integrations (80+) — Month 2-3</li>
+<li>Use case pages — Month 3</li>
+<li>Expand all categories — Ongoing</li>
+</ul>
+
+<h2 id="technical-generate-via-next-js-dynamic-routes-cms-database-for-app-data">Technical: Generate via Next.js dynamic routes + CMS/database for app data</h2></section>
+<section id="corey-schema-markup" class="skill-section">
+<h2 class="skill-title">Schema Markup <span class="skill-badge">Corey Haines</span></h2>
+
+<h2 id="current-state">Current State</h2>
+<p>❌ <strong>Zero schema markup detected.</strong> No JSON-LD, no Microdata, no RDFa.</p>
+
+<h2 id="recommended-schema-implementation">Recommended Schema Implementation</h2>
+
+<h3 id="1-organization-homepage-priority">1. Organization (Homepage) — Priority: 🔴</h3>
+
+<pre><code class="language-json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SureThing",
+  "url": "https://surething.io",
+  "logo": "https://surething.io/logo.png",
+  "description": "The autonomous AI agent that remembers you and works while you sleep.",
+  "foundingDate": "2024",
+  "sameAs": [
+    "https://twitter.com/getsurething",
+    "https://github.com/getsurething",
+    "https://linkedin.com/company/getsurething"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "email": "support@surething.io"
+  }
+}
+</code></pre>
+
+<h3 id="2-website-homepage-priority">2. WebSite (Homepage) — Priority: 🔴</h3>
+
+<pre><code class="language-json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "SureThing",
+  "url": "https://surething.io",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://surething.io/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</code></pre>
+
+<h3 id="3-softwareapplication-homepage-features-priority">3. SoftwareApplication (Homepage + Features) — Priority: 🔴</h3>
+
+<pre><code class="language-json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "SureThing",
+  "operatingSystem": "Web, macOS, Windows, iOS, Android",
+  "applicationCategory": "BusinessApplication",
+  "description": "Autonomous AI agent platform with persistent memory, 1000+ app integrations, and 24/7 execution.",
+  "offers": {
+    "@type": "AggregateOffer",
+    "lowPrice": "0",
+    "highPrice": "10000",
+    "priceCurrency": "USD",
+    "offerCount": "4"
+  },
+  "featureList": [
+    "Persistent cross-session memory",
+    "Autonomous 24/7 execution",
+    "1000+ app integrations",
+    "Social media distribution",
+    "Self-evolving agents",
+    "Installable growth playbooks"
+  ]
+}
+</code></pre>
+
+<h3 id="4-offer-pricing-page-priority">4. Offer (Pricing Page) — Priority: 🟡</h3>
+
+<pre><code class="language-json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "SureThing",
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Free",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "1,000 credits + 150 daily refresh"
+    },
+    {
+      "@type": "Offer",
+      "name": "Basic",
+      "price": "30",
+      "priceCurrency": "USD",
+      "billingIncrement": "month",
+      "description": "6,000 credits/month"
+    },
+    {
+      "@type": "Offer",
+      "name": "Plus",
+      "priceRange": "$60-$150",
+      "priceCurrency": "USD",
+      "billingIncrement": "month",
+      "description": "12,000-30,000 credits/month"
+    },
+    {
+      "@type": "Offer",
+      "name": "Pro",
+      "priceRange": "$200-$10,000",
+      "priceCurrency": "USD",
+      "billingIncrement": "month",
+      "description": "40,000-2,000,000 credits/month"
+    }
+  ]
+}
+</code></pre>
+
+<h3 id="5-faqpage-when-faq-section-is-added-priority">5. FAQPage (When FAQ section is added) — Priority: 🟡</h3>
+
+<pre><code class="language-json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is SureThing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SureThing is an autonomous AI agent platform that handles email, calendar, social media, and growth operations 24/7 with persistent memory across 1,000+ connected apps."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is SureThing different from ChatGPT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ChatGPT resets context every session and requires you to initiate every interaction. SureThing has persistent memory, works autonomously 24/7, and connects to 1,000+ apps including social media platforms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is SureThing free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. SureThing offers a free tier with 1,000 credits on signup plus 150 credits refreshed daily. Paid plans start at $30/month."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my data secure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SureThing is Google CASA Tier 2 Compliant and SOC II certified with a 28-day refund policy."
+      }
+    }
+  ]
+}
+</code></pre>
+
+<h3 id="6-breadcrumblist-priority">6. BreadcrumbList — Priority: 🟡</h3>
+
+<pre><code class="language-json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://surething.io" },
+    { "@type": "ListItem", "position": 2, "name": "Features", "item": "https://surething.io/features" },
+    { "@type": "ListItem", "position": 3, "name": "Email Management", "item": "https://surething.io/features/email" }
+  ]
+}
+</code></pre>
+
+<h2 id="implementation-notes">Implementation Notes</h2>
+<ul>
+<li>Place all JSON-LD in <code><script type="application/ld+json"></code> tags in <code><head></code></li>
+<li>Multiple schema blocks can coexist on one page</li>
+<li>Validate with Google Rich Results Test before deploying</li>
+<li>Monitor in Google Search Console → Enhancements</li>
+</ul>
+</section>
+<section id="corey-content-strategy" class="skill-section">
+<h2 class="skill-title">Content Strategy <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="content-pillars">Content Pillars</h2>
+<ul>
+<li><strong>Autonomous AI Operations</strong> (SEO): "What is an AI Agent?", "L2 vs L3 AI", "Run Company at Inference Speed"</li>
+<li><strong>AI Email & Productivity</strong> (SEO): email management guides, calendar automation, social posting</li>
+<li><strong>Growth Playbooks</strong> (hybrid): playbook features, "Install Run ROI", skill marketplace</li>
+<li><strong>Founder Stories</strong> (shareable): building in public, product decisions, "Why We Built SureThing"</li>
+<li><strong>Comparisons</strong> (SEO, bottom-funnel): vs Lindy, vs ChatGPT, vs Zapier, vs Claude Cowork, vs Okara</li>
+</ul>
+
+<h2 id="month-1-12-pieces">Month 1: 12 Pieces</h2>
+<ul>
+<li>W1: "What is an AI Agent?" + "Why AI Resets Every Session" + vs Lindy page</li>
+<li>W2: "AI Email Management Guide" + vs ChatGPT + vs Zapier</li>
+<li>W3: "L2 vs L3 AI" + "Run Company at Inference Speed"</li>
+<li>W4: "10 Growth Strategies for AI Agents" + "Why We Built SureThing" + vs Claude Cowork + vs Okara</li>
+</ul>
+
+<h2 id="distribution-every-blog-post-twitter-thread-linkedin-post-reddit-discussion-instagram-carousel-email-mention">Distribution: Every blog post → Twitter thread + LinkedIn post + Reddit discussion + Instagram carousel + email mention</h2>
+
+<h2 id="seo-targets-6mo">SEO Targets (6mo):</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Cluster</th><th>Posts</th><th>Traffic</th></tr></thead><tbody>
+<tr><td>AI agent</td><td>5</td><td>2-5K/mo</td></tr>
+<tr><td>AI email</td><td>3</td><td>1-3K/mo</td></tr>
+<tr><td>AI social</td><td>3</td><td>800-2K/mo</td></tr>
+<tr><td>Competitor alt</td><td>5</td><td>500-1.5K/mo</td></tr>
+<tr><td>AI for founders</td><td>4</td><td>400-1K/mo</td></tr>
+</tbody></table></div></section>
+<div class="category-header"><h3>CRO & Conversion</h3></div>
+<section id="corey-page-cro" class="skill-section">
+<h2 class="skill-title">Page Cro <span class="skill-badge">Corey Haines</span></h2>
+
+<h2 id="initial-assessment">Initial Assessment</h2>
+<ul>
+<li><strong>Page type:</strong> Homepage</li>
+<li><strong>Primary conversion goal:</strong> Free signup (Sign in with Google)</li>
+<li><strong>Traffic context:</strong> Organic, social, paid ads, Product Hunt, referrals</li>
+</ul>
+
+<h2 id="cro-analysis">CRO Analysis</h2>
+
+<h3 id="1-value-proposition-clarity-score-2-10">1. Value Proposition Clarity — Score: 2/10 🔴</h3>
+
+<p><strong>5-second test: FAIL.</strong> A new visitor cannot understand what SureThing does, who it's for, or why they should care. The H1 ("remembers you and works while you sleep") is poetic but not explanatory. The first substantive body text is about security compliance.</p>
+
+<p><strong>Fix:</strong> Replace hero section entirely. Lead with what it does + who it's for + key benefit. Add subheadline that explains the product category.</p>
+
+<h3 id="2-headline-effectiveness-score-5-10">2. Headline Effectiveness — Score: 5/10 🟡</h3>
+
+<p><strong>Current H1:</strong> "The autonomous agent that remembers you and works while you sleep."</p>
+<ul>
+<li>✅ Memorable, creates curiosity</li>
+<li>❌ "Autonomous agent" is jargon for non-technical founders</li>
+<li>❌ Doesn't communicate core value (what does it DO?)</li>
+<li>❌ Duplicate H1 (same text appears twice in DOM)</li>
+</ul>
+
+<p><strong>Recommended:</strong> "Run your entire company at inference speed." + subheadline that explains the product.</p>
+
+<h3 id="3-cta-placement-copy-and-hierarchy-score-2-10">3. CTA Placement, Copy, and Hierarchy — Score: 2/10 🔴</h3>
+
+<p><strong>Critical issues:</strong></p>
+<ul>
+<li>Only CTA is "Sign in with Google" — an authentication action, not a value action</li>
+<li>No value framing around the CTA (no "Start free", no "No credit card required")</li>
+<li>No secondary CTA (demo, learn more, watch video)</li>
+<li>No CTA visible after the fold</li>
+<li>No sticky CTA or exit-intent capture</li>
+</ul>
+
+<p><strong>Fix:</strong></p>
+<ul>
+<li>Primary: "Start free — no credit card" (value-framed)</li>
+<li>Secondary: "Watch 90-second demo"</li>
+<li>Add CTAs at hero, mid-page, and bottom</li>
+<li>Add sticky header CTA on scroll</li>
+</ul>
+
+<h3 id="4-visual-hierarchy-and-scannability-score-3-10">4. Visual Hierarchy and Scannability — Score: 3/10 🔴</h3>
+
+<ul>
+<li>Only 2 content sections visible (hero + integrations)</li>
+<li>~314 words total — far too thin for a SaaS homepage</li>
+<li>No feature cards, screenshots, or visual breakdowns</li>
+<li>No iconography or illustrations</li>
+<li>No content below integrations before footer</li>
+</ul>
+
+<p><strong>Fix:</strong> Build proper page sections: Hero → Features (4 pillars) → How it Works → Social Proof → Pricing Summary → FAQ → Final CTA</p>
+
+<h3 id="5-trust-signals-and-social-proof-score-1-10">5. Trust Signals and Social Proof — Score: 1/10 🔴</h3>
+
+<p><strong>Present:</strong></p>
+<ul>
+<li>✅ Google CASA Tier 2 badge</li>
+<li>✅ SOC II certification mentioned</li>
+</ul>
+
+<p><strong>Missing:</strong></p>
+<ul>
+<li>❌ No customer testimonials</li>
+<li>❌ No customer logos</li>
+<li>❌ No user count / active users</li>
+<li>❌ No case studies</li>
+<li>❌ No ratings/reviews</li>
+<li>❌ No "as seen in" press logos</li>
+<li>❌ No video testimonials</li>
+</ul>
+
+<p><strong>Fix:</strong> Add at minimum: 3 testimonials, customer count, 5 logos. Even "early access" language with a waitlist count creates social proof.</p>
+
+<h3 id="6-objection-handling-score-1-10">6. Objection Handling — Score: 1/10 🔴</h3>
+
+<p>No FAQ. No objection-handling copy anywhere. Key questions left unanswered:</p>
+<ul>
+<li>"What does it actually do?"</li>
+<li>"Is my data safe?"</li>
+<li>"How much does it cost?"</li>
+<li>"How is this different from ChatGPT?"</li>
+<li>"Can I try it free?"</li>
+</ul>
+
+<p><strong>Fix:</strong> Add FAQ section with 6-8 questions. Add "How is this different?" comparison section.</p>
+
+<h3 id="7-friction-points-score-2-10">7. Friction Points — Score: 2/10 🔴</h3>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Friction Point</th><th>Severity</th><th>Fix</th></tr></thead><tbody>
+<tr><td>Only signup option is Google OAuth</td><td>High</td><td>Add email signup option or at least explain why Google-only</td></tr>
+<tr><td>Free tier not mentioned on homepage</td><td>High</td><td>Add "Free forever" messaging + what's included</td></tr>
+<tr><td>No demo/preview before signup</td><td>High</td><td>Add product video or interactive demo</td></tr>
+<tr><td>Credit model unexplained</td><td>Medium</td><td>Add "What can I do with credits?" explainer</td></tr>
+<tr><td>No pricing visible on homepage</td><td>Medium</td><td>Add pricing summary section</td></tr>
+<tr><td>No social links (trust signal)</td><td>Low</td><td>Add footer social links</td></tr>
+</tbody></table></div>
+
+<h2 id="output">Output</h2>
+
+<h3 id="quick-wins-implement-this-week">Quick Wins (Implement This Week)</h3>
+<ul>
+<li><strong>Fix duplicate H1</strong> — remove one instance (5 min)</li>
+<li><strong>Change CTA copy</strong> from "Sign in with Google" → "Start free with Google — no credit card" (10 min)</li>
+<li><strong>Add "Free: 1,000 credits + 150/day refresh" text</strong> near CTA (10 min)</li>
+<li><strong>Move security badges</strong> to a trust bar below the fold, not in hero body (30 min)</li>
+<li><strong>Add social links</strong> to footer (15 min)</li>
+</ul>
+
+<h3 id="high-impact-changes-this-month">High-Impact Changes (This Month)</h3>
+<ul>
+<li><strong>Rewrite hero section</strong> — new H1, subheadline, 3 benefit bullets, dual CTA</li>
+<li><strong>Add 4 feature sections</strong> — one per pillar (Agent Swarm, Self-Evolving, Installable Playbooks, Human as Chairman)</li>
+<li><strong>Add social proof section</strong> — testimonials, customer count, logos</li>
+<li><strong>Add FAQ section</strong> — 6-8 common objections answered</li>
+<li><strong>Add pricing summary</strong> — free tier + plans overview with "See all plans" link</li>
+<li><strong>Add product demo video</strong> — 60-90 second screencap</li>
+<li><strong>Add exit-intent popup</strong> — email capture with lead magnet</li>
+</ul>
+
+<h3 id="test-ideas">Test Ideas</h3>
+<ul>
+<li><strong>H1 test:</strong> "Run your company at inference speed" vs "One person should be enough" vs "Shipping is solved. Running your company isn't."</li>
+<li><strong>CTA test:</strong> "Start free" vs "Try SureThing free" vs "Get your AI agent"</li>
+<li><strong>Social proof placement:</strong> Above fold (customer count in hero) vs below fold (full testimonial section)</li>
+<li><strong>Pricing on homepage:</strong> Summary section vs no pricing (just link to /pricing)</li>
+</ul>
+
+<h3 id="estimated-conversion-lift">Estimated Conversion Lift</h3>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Change</th><th>Est. Lift</th><th>Confidence</th></tr></thead><tbody>
+<tr><td>Hero rewrite (H1 + sub + bullets)</td><td>+40-70%</td><td>High</td></tr>
+<tr><td>CTA reframe ("Start free")</td><td>+20-35%</td><td>High</td></tr>
+<tr><td>Social proof addition</td><td>+15-30%</td><td>Medium</td></tr>
+<tr><td>Product demo video</td><td>+20-40%</td><td>Medium</td></tr>
+<tr><td>FAQ section</td><td>+5-15%</td><td>Medium</td></tr>
+<tr><td>Pricing summary on homepage</td><td>+10-20%</td><td>Medium</td></tr>
+<tr><td><strong>Combined (all changes)</strong></td><td><strong>+80-150%</strong></td><td><strong>Medium</strong></td></tr>
+</tbody></table></div>
+
+<p><strong>Current conversion score: 25/100</strong></p>
+<p><strong>Projected post-optimization: 60-75/100</strong></p>
+</section>
+<section id="corey-signup-flow-cro" class="skill-section">
+<h2 class="skill-title">Signup Flow Cro <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="current-homepage-sign-in-with-google-oauth-dashboard">Current: Homepage → "Sign in with Google" → OAuth → Dashboard</h2>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Dimension</th><th>Score</th><th>Fix</th></tr></thead><tbody>
+<tr><td>Fields</td><td>10/10</td><td>Google OAuth = zero fields ✅</td></tr>
+<tr><td>Value framing</td><td>1/10</td><td>"Sign in" = auth, not signup. Change to "Start free with Google"</td></tr>
+<tr><td>Trust signals</td><td>4/10</td><td>CASA+SOC II present but buried. Add near CTA</td></tr>
+<tr><td>Pre-signup context</td><td>1/10</td><td>No explanation of what you get after signing up</td></tr>
+<tr><td>Alternative auth</td><td>0/10</td><td>No email/password option</td></tr>
+<tr><td>Social proof at CTA</td><td>0/10</td><td>No "Join X founders" or testimonial</td></tr>
+</tbody></table></div>
+
+<h2 id="recommendations">Recommendations</h2>
+<ul>
+<li><strong>CTA:</strong> "Start free with Google" + subtext "No credit card · Free forever · 1,000 credits"</li>
+<li><strong>Pre-signup value:</strong> Show 3 bullets of what happens after signup</li>
+<li><strong>Trust near CTA:</strong> "Google CASA Tier 2 · SOC II" badges inline</li>
+<li><strong>Social proof:</strong> "Join 500+ founders" (even small numbers help)</li>
+<li><strong>Add email auth</strong> option for privacy-conscious users</li>
+<li><strong>Show product preview</strong> behind/around signup area</li>
+</ul></section>
+<section id="corey-onboarding-cro" class="skill-section">
+<h2 class="skill-title">Onboarding Cro <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="aha-moment-agent-completes-first-autonomous-action-without-being-asked">Aha Moment: Agent completes first autonomous action without being asked</h2>
+<h2 id="activation-metric-gmail-connected-first-agent-action-within-24h">Activation Metric: Gmail connected → first agent action within 24h</h2>
+<h2 id="onboarding-checklist">Onboarding Checklist:</h2>
+<pre><code>
+Your AI Agent Setup [3/5]
+✅ Create account
+✅ Connect Gmail
+✅ Set email preferences
+☐ Connect first social platform
+☐ Install your first playbook
+</code></pre>
+<h2 id="empty-states">Empty States:</h2>
+<ul>
+<li>Inbox: "Your agent is reading your inbox. Check back in 5 min."</li>
+<li>Social: "Connect Twitter to start autonomous posting."</li>
+<li>Skills: "Browse 50+ playbooks. Install in one click."</li>
+</ul>
+
+<h2 id="multi-channel">Multi-Channel:</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Channel</th><th>Timing</th><th>Message</th></tr></thead><tbody>
+<tr><td>In-app</td><td>Immediate</td><td>Checklist + guided setup</td></tr>
+<tr><td>Email</td><td>+1 hour</td><td>"Your agent processed its first batch"</td></tr>
+<tr><td>Push</td><td>+4 hours</td><td>"Your agent found 3 priority emails"</td></tr>
+<tr><td>Email</td><td>+1 day</td><td>"What SureThing did while you slept"</td></tr>
+</tbody></table></div>
+
+<h2 id="key-metrics-gmail-connect-session-1-3-5-checklist-7d-time-to-first-agent-action-d1-d7-d30-retention">Key Metrics: % Gmail connect (session 1), % 3/5 checklist (7d), time to first agent action, D1/D7/D30 retention</h2></section>
+<section id="corey-form-cro" class="skill-section">
+<h2 class="skill-title">Form Cro <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="assessment">Assessment</h2>
+<p>SureThing's signup uses Google OAuth — zero form fields. This is optimal for friction reduction.</p>
+
+<h2 id="forms-that-will-need-cro">Forms That Will Need CRO:</h2>
+<h3 id="1-contact-support-form-when-created">1. Contact/Support Form (when created)</h3>
+<ul>
+<li>Fields: Email (pre-fill if logged in), Subject dropdown, Message</li>
+<li><strong>Reduce to:</strong> One textarea + auto-detect subject from content</li>
+<li>Add: "Typical response time: < 4 hours" expectation setting</li>
+</ul>
+
+<h3 id="2-lead-capture-blog-content">2. Lead Capture (blog/content)</h3>
+<ul>
+<li><strong>Recommended:</strong> Email-only field</li>
+<li>Copy: "Get the weekly growth playbook. One email. No spam."</li>
+<li>Add: Social proof "Join 2,000+ founders"</li>
+</ul>
+
+<h3 id="3-credit-calculator-pricing-page">3. Credit Calculator (pricing page)</h3>
+<ul>
+<li>Input: "How many emails/day?" "How many social posts/week?" "How many follow-ups?"</li>
+<li>Output: Recommended plan + credit estimate</li>
+<li>CTA: "Start free with this plan"</li>
+</ul>
+
+<h3 id="4-skill-submission-form-marketplace">4. Skill Submission Form (marketplace)</h3>
+<ul>
+<li>Fields: Skill name, category (dropdown), description, methodology</li>
+<li>Progressive disclosure: Start with name + category → expand for details</li>
+<li>Add: Drag-and-drop for SKILL.md upload</li>
+</ul>
+
+<h2 id="general-principles">General Principles</h2>
+<ul>
+<li>Every field has a cost — only ask what you'll use immediately</li>
+<li>Pre-fill from context (logged-in user data)</li>
+<li>Inline validation, not submit-and-error</li>
+<li>Progress indicators for multi-step forms</li>
+</ul></section>
+<section id="corey-popup-cro" class="skill-section">
+<h2 class="skill-title">Popup Cro <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="current-state-no-popups-on-surething-io">Current State: No popups on surething.io</h2>
+
+<h2 id="recommended-popups">Recommended Popups</h2>
+
+<h3 id="1-exit-intent-homepage-priority">1. Exit-Intent (Homepage) — Priority: 🔴</h3>
+<p><strong>Trigger:</strong> Mouse moves toward close/back</p>
+<p><strong>Offer:</strong> "Before you go — get the AI Agent Starter Guide (free)"</p>
+<p><strong>Fields:</strong> Email only</p>
+<p><strong>Design:</strong> Clean, branded, minimal. Show value clearly.</p>
+<p><strong>Expected capture:</strong> 3-5% of abandoning visitors</p>
+
+<h3 id="2-scroll-triggered-blog-posts-priority">2. Scroll-Triggered (Blog posts) — Priority: 🟡</h3>
+<p><strong>Trigger:</strong> 50% scroll depth</p>
+<p><strong>Offer:</strong> "Like this? Get weekly growth playbooks in your inbox."</p>
+<p><strong>Fields:</strong> Email only</p>
+<p><strong>Design:</strong> Slide-in from bottom-right (less intrusive)</p>
+
+<h3 id="3-time-delayed-pricing-page-priority">3. Time-Delayed (Pricing page) — Priority: 🟡</h3>
+<p><strong>Trigger:</strong> 30 seconds on pricing page without clicking CTA</p>
+<p><strong>Offer:</strong> "Not sure which plan? Start free — 150 credits every day."</p>
+<p><strong>Fields:</strong> None (direct CTA button to signup)</p>
+<p><strong>Aim:</strong> Reduce pricing page bounce</p>
+
+<h3 id="4-first-visit-welcome-new-visitors-priority">4. First-Visit Welcome (New visitors) — Priority: 🟢</h3>
+<p><strong>Trigger:</strong> First visit, 10 seconds on page</p>
+<p><strong>Offer:</strong> "New here? Watch the 90-second demo →"</p>
+<p><strong>Format:</strong> Top bar (not modal) — minimal friction</p>
+<p><strong>Dismiss:</strong> "X" or auto-dismiss after scroll</p>
+
+<h2 id="rules">Rules</h2>
+<ul>
+<li>Max 1 popup per session</li>
+<li>Never show to logged-in users</li>
+<li>Mobile: use banners, not modals</li>
+<li>A/B test every popup before committing</li>
+<li>Respect "don't show again" preference</li>
+</ul></section>
+<section id="corey-paywall-upgrade-cro" class="skill-section">
+<h2 class="skill-title">Paywall Upgrade Cro <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="trigger-points">Trigger Points</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Trigger</th><th>Message</th><th>CTA</th></tr></thead><tbody>
+<tr><td>Credits < 20% remaining</td><td>"Running low on credits. Your agent slows down at 0."</td><td>"Add credits →"</td></tr>
+<tr><td>Daily refresh used up</td><td>"Today's free credits are gone. Agent pauses until tomorrow."</td><td>"Upgrade for 24/7 operation →"</td></tr>
+<tr><td>Advanced skill attempted</td><td>"This skill requires Starter plan or above."</td><td>"Unlock all skills — $29/mo →"</td></tr>
+<tr><td>Agent Swarm feature</td><td>"Multi-agent swarm is available on Growth plan."</td><td>"Upgrade to Growth →"</td></tr>
+<tr><td>14 days active, still free</td><td>"You've been using SureThing for 2 weeks. Here's what you'd unlock:"</td><td>"See plans →"</td></tr>
+</tbody></table></div>
+
+<h2 id="paywall-screen-design">Paywall Screen Design</h2>
+<ul>
+<li><strong>What they tried to do</strong> (contextual)</li>
+<li><strong>What the upgrade unlocks</strong> (3 bullets)</li>
+<li><strong>Social proof</strong> ("Most founders choose Growth")</li>
+<li><strong>Price anchored</strong> against value ($30/mo vs $2,400/mo VA)</li>
+<li><strong>CTA</strong> with trial/guarantee messaging</li>
+<li><strong>Dismiss option</strong> (respect the no)</li>
+</ul>
+
+<h2 id="credit-usage-indicator">Credit Usage Indicator</h2>
+<ul>
+<li>Always visible in dashboard</li>
+<li>Color coding: Green (>50%) → Yellow (20-50%) → Red (<20%)</li>
+<li>Hover: "You have X credits. That's about Y more emails / Z posts."</li>
+<li>Link to usage breakdown and upgrade</li>
+</ul></section>
+<div class="category-header"><h3>Copy & Messaging</h3></div>
+<section id="corey-copywriting" class="skill-section">
+<h2 class="skill-title">Copywriting <span class="skill-badge">Corey Haines</span></h2>
+
+<h2 id="page-purpose">Page Purpose</h2>
+<ul>
+<li><strong>Type:</strong> Homepage (primary marketing page)</li>
+<li><strong>Primary action:</strong> Free signup (Sign in with Google)</li>
+<li><strong>Traffic sources:</strong> Organic, social, paid ads, Product Hunt, referral</li>
+</ul>
+
+<h2 id="current-copy-audit">Current Copy Audit</h2>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Element</th><th>Current Copy</th><th>Score</th><th>Issue</th></tr></thead><tbody>
+<tr><td>H1</td><td>"The autonomous agent that remembers you and works while you sleep."</td><td>6/10</td><td>Evocative but doesn't explain WHAT it does</td></tr>
+<tr><td>Sub-hero</td><td>"SureThing is enterprise-level secure, Google CASA Tier 2 Compliant and SOC II certified."</td><td>2/10</td><td>Leads with compliance, buries value</td></tr>
+<tr><td>H2</td><td>"Thousands of Integrations"</td><td>4/10</td><td>Feature-led, not benefit-led</td></tr>
+<tr><td>Body</td><td>"Connect with 1000+ apps or bring your own with custom API integrations."</td><td>5/10</td><td>Generic, could be any integration platform</td></tr>
+<tr><td>CTA</td><td>"Sign in with Google"</td><td>3/10</td><td>Authentication action, zero value proposition</td></tr>
+</tbody></table></div>
+
+<h2 id="rewritten-homepage-copy">Rewritten Homepage Copy</h2>
+
+<h3 id="hero-section">Hero Section</h3>
+
+<p><strong>H1 (Option A — Category-defining):</strong></p>
+<blockquote>Shipping is solved. Running your company isn't.</blockquote>
+
+<p><strong>H1 (Option B — Outcome-focused):</strong></p>
+<blockquote>Run your entire company at inference speed.</blockquote>
+
+<p><strong>H1 (Option C — Identity-driven):</strong></p>
+<blockquote>One person should be enough.</blockquote>
+
+<p><strong>Subheadline:</strong></p>
+<blockquote>SureThing is the always-on AI agent that handles your email, calendar, social media, and growth ops — 24/7. Persistent memory means it never forgets your context. 1,000+ apps. Zero babysitting.</blockquote>
+
+<p><strong>Hero bullets (3 pillars):</strong></p>
+<ul>
+<li>🧠 <strong>Persistent Memory</strong> — Your agent remembers what worked last quarter. No context resets, ever.</li>
+<li>⚡ <strong>Always-On Execution</strong> — Scheduled tasks, event triggers, overnight email triage. Works at 3am.</li>
+<li>📱 <strong>Social Distribution</strong> — Posts to Twitter, LinkedIn, Reddit, TikTok, Instagram, YouTube. Autonomously.</li>
+</ul>
+
+<p><strong>Primary CTA:</strong></p>
+<blockquote>Start free — no credit card →</blockquote>
+
+<p><strong>Secondary CTA:</strong></p>
+<blockquote>Watch 90-second demo</blockquote>
+
+<h3 id="value-proposition-section">Value Proposition Section</h3>
+
+<p><strong>Section headline:</strong></p>
+<blockquote>Your AI workforce. You're the chairman.</blockquote>
+
+<p><strong>Body:</strong></p>
+<blockquote>Other AI tools wait for you to type. SureThing acts. It triages your inbox, follows up on missed opportunities, posts across 5+ social platforms, and runs growth playbooks from real practitioners — all while you sleep.</blockquote>
+<blockquote></blockquote>
+<blockquote>And it gets smarter every day. Self-evolving agents compound your context, your preferences, your wins. No resets. No repeating yourself.</blockquote>
+
+<h3 id="features-section">Features Section</h3>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Before (Current)</th><th>After (Rewritten)</th></tr></thead><tbody>
+<tr><td>"Thousands of Integrations"</td><td>"1,000+ Apps. One Agent. Your Entire Workflow."</td></tr>
+<tr><td>"Connect with 1000+ apps or bring your own with custom API integrations."</td><td>"Email, calendar, social, CRM, payments, docs — connected and intelligent. Not just automated. Adaptive."</td></tr>
+<tr><td>(missing — no feature descriptions)</td><td><strong>Agent Swarm:</strong> "Multiple agents, shared memory. Your AI team coordinates at inference speed."</td></tr>
+<tr><td>(missing)</td><td><strong>Installable Playbooks:</strong> "Growth strategies from top practitioners. One-click install. Runs autonomously."</td></tr>
+<tr><td>(missing)</td><td><strong>Self-Evolving:</strong> "Every interaction teaches your agent. It compounds knowledge, not resets it."</td></tr>
+</tbody></table></div>
+
+<h3 id="social-proof-section-currently-missing-must-add">Social Proof Section (currently missing — MUST add)</h3>
+
+<p><strong>Headline:</strong></p>
+<blockquote>Built for founders who can't clone themselves.</blockquote>
+
+<p><strong>Trust bar:</strong></p>
+<ul>
+<li>Google CASA Tier 2 Compliant</li>
+<li>SOC II Certified</li>
+<li>28-Day Refund Policy</li>
+<li>Desktop · Mobile · Web</li>
+</ul>
+
+<h3 id="pricing-section-currently-missing-from-homepage-add-summary">Pricing Section (currently missing from homepage — add summary)</h3>
+
+<p><strong>Headline:</strong></p>
+<blockquote>Start free. Scale when you're ready.</blockquote>
+
+<p><strong>Copy:</strong></p>
+<blockquote>Free forever: 1,000 credits + 150 daily refresh. Enough to run email triage, social posting, and meeting scheduling without paying a cent. When you need more, plans start at $30/month.</blockquote>
+
+<p><strong>CTA:</strong></p>
+<blockquote>See all plans →</blockquote>
+
+<h3 id="final-cta-section">Final CTA Section</h3>
+
+<p><strong>Headline:</strong></p>
+<blockquote>Your competitor just hired an AI team. You're still building one.</blockquote>
+
+<p><strong>CTA:</strong></p>
+<blockquote>Start free with Google →</blockquote>
+
+<hr>
+
+<h2 id="page-specific-copy-guidelines">Page-Specific Copy Guidelines</h2>
+
+<h3 id="pricing-page-improvements">Pricing Page Improvements</h3>
+<ul>
+<li><strong>Current:</strong> Raw credit numbers without context</li>
+<li><strong>Add:</strong> "What can I do with X credits?" calculator or examples table</li>
+<li><strong>Add:</strong> Social proof per tier ("Most popular" badge on Plus)</li>
+<li><strong>Rewrite CTA:</strong> "Start free" instead of "Sign in with Google"</li>
+</ul>
+
+<h3 id="meta-description-for-seo">Meta Description (for SEO)</h3>
+<ul>
+<li><strong>Before:</strong> "The autonomous agent that remembers who you are and works while you sleep. 1000+ apps. Persistent memory. 24/7 execution. One person should be enough."</li>
+<li><strong>After:</strong> "SureThing: the AI agent that runs your email, social media, and growth ops autonomously. Persistent memory. 1,000+ apps. Works while you sleep. Start free."</li>
+</ul>
+
+<h3 id="og-social-share-copy">OG / Social Share Copy</h3>
+<ul>
+<li><strong>Title:</strong> "SureThing — Run Your Company at Inference Speed"</li>
+<li><strong>Description:</strong> "The AI agent that remembers you and works while you sleep. Email, social, growth ops — all autonomous. One person should be enough."</li>
+</ul>
+
+<hr>
+
+<h2 id="copywriting-principles-applied">Copywriting Principles Applied</h2>
+
+<ul>
+<li><strong>Clarity over cleverness</strong> ✅ — Rewrites explain what SureThing does in plain language</li>
+<li><strong>Benefits over features</strong> ✅ — "Works at 3am" > "24/7 execution"</li>
+<li><strong>Specificity over vagueness</strong> ✅ — "Posts to Twitter, LinkedIn, Reddit, TikTok, Instagram, YouTube" > "social media"</li>
+<li><strong>Customer language</strong> ✅ — "Can't clone myself," "just want to use it and see ROI"</li>
+<li><strong>One idea per section</strong> ✅ — Each section advances one argument</li>
+</ul>
+</section>
+<section id="corey-copy-editing" class="skill-section">
+<h2 class="skill-title">Copy Editing <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="seven-sweeps-applied-to-current-homepage">Seven Sweeps Applied to Current Homepage</h2>
+
+<h3 id="sweep-1-clarity">Sweep 1: Clarity</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Current</th><th>Issue</th><th>Fix</th></tr></thead><tbody>
+<tr><td>"The autonomous agent that remembers you and works while you sleep"</td><td>"Autonomous agent" = jargon</td><td>"The AI that runs your business ops while you sleep"</td></tr>
+<tr><td>"Google CASA Tier 2 Compliant and SOC Il certified"</td><td>Leads with compliance</td><td>Move to trust badge section</td></tr>
+<tr><td>"Connect with 1000+ apps or bring your own with custom API integrations"</td><td>Feature-first</td><td>"One agent handles email, social, calendar, CRM — across 1,000+ apps"</td></tr>
+</tbody></table></div>
+
+<h3 id="sweep-2-voice-and-tone">Sweep 2: Voice and Tone</h3>
+<ul>
+<li>Current: Oscillates between poetic (H1) and corporate (security text)</li>
+<li>Target: Consistent confident-founder voice throughout</li>
+<li>Rule: If it sounds like a press release, rewrite it</li>
+</ul>
+
+<h3 id="sweep-3-so-what">Sweep 3: So What</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Claim</th><th>"So what?" test</th><th>Improved</th></tr></thead><tbody>
+<tr><td>"Persistent memory"</td><td>So what? →</td><td>"Never repeat yourself. Your agent remembers every conversation."</td></tr>
+<tr><td>"1,000+ integrations"</td><td>So what? →</td><td>"Gmail, Slack, Twitter, Notion — all connected, all intelligent."</td></tr>
+<tr><td>"24/7 execution"</td><td>So what? →</td><td>"You sleep. Your agent triages email, posts to social, follows up on leads."</td></tr>
+</tbody></table></div>
+
+<h3 id="sweep-4-prove-it">Sweep 4: Prove It</h3>
+<ul>
+<li>❌ No proof anywhere on homepage</li>
+<li>Add: user count, testimonials, specific stats ("managed 100K+ emails this week")</li>
+<li>Move CASA/SOC II to proof section (they ARE proof — just misplaced)</li>
+</ul>
+
+<h3 id="sweep-5-specificity">Sweep 5: Specificity</h3>
+<ul>
+<li>"works while you sleep" → "triaged 47 emails and posted to 4 platforms before you woke up"</li>
+<li>"1000+ apps" → "Gmail, Slack, Twitter, Notion, Stripe, and 1,000+ more"</li>
+</ul>
+
+<h3 id="sweep-6-heightened-emotion">Sweep 6: Heightened Emotion</h3>
+<ul>
+<li>Add: "Expertise used to compound. AI made it reset. Until now."</li>
+<li>Add: "One person should be enough. Now it is."</li>
+</ul>
+
+<h3 id="sweep-7-zero-risk">Sweep 7: Zero Risk</h3>
+<ul>
+<li>Make free tier prominent: "Start free. 150 credits every day. No credit card."</li>
+<li>Add guarantee: "28-day money-back guarantee" as visual badge</li>
+<li>Add: "Cancel anytime" near pricing</li>
+</ul></section>
+<section id="corey-cold-email" class="skill-section">
+<h2 class="skill-title">Cold Email <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="use-cases-for-surething-cold-email">Use Cases for SureThing Cold Email</h2>
+<ul>
+<li><strong>KOL/Influencer outreach</strong> for 2.0 launch</li>
+<li><strong>Partnership outreach</strong> to complementary tools</li>
+<li><strong>Press outreach</strong> to tech journalists</li>
+<li><strong>Template for users</strong> to use SureThing for their own cold outreach</li>
+</ul>
+
+<h2 id="template-1-kol-outreach-skill-creator-recruitment">Template 1: KOL Outreach (Skill Creator Recruitment)</h2>
+
+<p><strong>Subject:</strong> Your growth playbook → installable AI skill (royalties included)</p>
+
+<p><strong>Body:</strong></p>
+<p>Hi {first_name},</p>
+
+<p>I noticed your {specific_content} — the {specific_tactic} approach is something founders constantly ask about but can't execute at scale.</p>
+
+<p>We're building SureThing, an AI agent platform where practitioners like you can turn their proven methods into installable skills. Think App Store for growth playbooks — one-click install, runs autonomously, adapts to each user's context.</p>
+
+<p>→ You keep the IP</p>
+<p>→ 20% revenue share on every install</p>
+<p>→ Your name + brand on the skill page</p>
+<p>→ Zero maintenance (the agent self-evolves)</p>
+
+<p>Would you be open to a 15-min call this week to see if {their_methodology} would fit?</p>
+
+<p>{sender_name}</p>
+
+<h2 id="template-2-press-outreach-2-0-launch">Template 2: Press Outreach (2.0 Launch)</h2>
+
+<p><strong>Subject:</strong> AI agent that posts to social media (Claude/ChatGPT can't)</p>
+
+<p><strong>Body:</strong></p>
+<p>Hi {journalist_name},</p>
+
+<p>Quick pitch: We built an autonomous AI agent that actually runs business operations — email, social media posting, growth playbooks — 24/7 with persistent memory.</p>
+
+<p>The interesting angle: Claude Cowork and ChatGPT can connect to apps, but neither can post to social media. Anthropic and OpenAI are structurally blocked from social APIs (brand risk, cost, safety identity). That's a permanent gap, not a temporary one.</p>
+
+<p>SureThing 2.0 fills it. Launch is {date}.</p>
+
+<p>Happy to provide early access or a demo for coverage.</p>
+
+<p>{sender_name}</p>
+
+<h2 id="principles-applied-peer-voice-every-sentence-earns-its-place-personalization-connects-to-their-problem-one-ask-15-min-call">Principles Applied: Peer voice, every sentence earns its place, personalization connects to their problem, one ask (15-min call).</h2></section>
+<section id="corey-email-sequence" class="skill-section">
+<h2 class="skill-title">Email Sequence <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="sequence-1-welcome-7-emails">Sequence 1: Welcome (7 emails)</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>#</th><th>Delay</th><th>Subject</th><th>Job</th></tr></thead><tbody>
+<tr><td>1</td><td>Immediate</td><td>Your AI agent is awake. Here's what to do first.</td><td>Connect Gmail</td></tr>
+<tr><td>2</td><td>+1d</td><td>Here's what SureThing did while you slept</td><td>Show overnight activity</td></tr>
+<tr><td>3</td><td>+2d</td><td>The 3 workflows power users set up in Week 1</td><td>Social proof + discovery</td></tr>
+<tr><td>4</td><td>+4d</td><td>"I can't clone myself" — here's the next best thing</td><td>Emotional + deeper features</td></tr>
+<tr><td>5</td><td>+7d</td><td>Your agent is getting smarter. Here's proof.</td><td>Memory/evolution</td></tr>
+<tr><td>6</td><td>+10d</td><td>You've used X credits. Here's what that unlocked.</td><td>Usage + upgrade tease</td></tr>
+<tr><td>7</td><td>+14d</td><td>What's next? Your agent has ideas.</td><td>Advanced features</td></tr>
+</tbody></table></div>
+
+<h3 id="email-1-body">Email 1 Body:</h3>
+<p>"Your SureThing agent is live. It's already learning your name, timezone, and preferences. But it needs one thing: <strong>→ Connect your Gmail</strong> (30 seconds). Once connected, it'll triage your inbox by priority, draft replies matching your tone, and follow up on threads you forgot. That's just Day 1. — The SureThing Team"</p>
+
+<h2 id="sequence-2-upgrade-nurture-6-emails">Sequence 2: Upgrade Nurture (6 emails)</h2>
+<p><strong>Trigger:</strong> 80% credit usage OR 14 days active free</p>
+<div class="table-wrap"><table>
+<thead><tr><th>#</th><th>Delay</th><th>Subject</th><th>Job</th></tr></thead><tbody>
+<tr><td>1</td><td>Trigger</td><td>Your agent's working hard — credits running low</td><td>Soft upgrade</td></tr>
+<tr><td>2</td><td>+2d</td><td>What happens when credits run out</td><td>Clarity</td></tr>
+<tr><td>3</td><td>+5d</td><td>Quick math: SureThing vs hiring a VA</td><td>ROI ($30 vs $2,400)</td></tr>
+<tr><td>4</td><td>+8d</td><td>Your agent has learned {X} things about you</td><td>Memory loss fear</td></tr>
+<tr><td>5</td><td>+12d</td><td>The playbooks Pro users are running</td><td>Feature envy</td></tr>
+<tr><td>6</td><td>+15d</td><td>Last chance: 20% off first month</td><td>Urgency close</td></tr>
+</tbody></table></div>
+
+<h2 id="sequence-3-launch-8-emails-for-2-0">Sequence 3: Launch (8 emails for 2.0)</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>#</th><th>Timing</th><th>Subject</th><th>Pillar</th></tr></thead><tbody>
+<tr><td>1</td><td>W-2</td><td>Something big is coming</td><td>Tease</td></tr>
+<tr><td>2</td><td>W-1</td><td>What if your AI agent could hire its own team?</td><td>Agent Swarm</td></tr>
+<tr><td>3</td><td>W-1+3d</td><td>Your agent now remembers what worked last quarter</td><td>Self-Evolving</td></tr>
+<tr><td>4</td><td>Launch day</td><td>SureThing 2.0: Install. Run. ROI.</td><td>Full reveal</td></tr>
+<tr><td>5</td><td>+1d</td><td>Playbooks that grew $1M companies — one click</td><td>Playbooks</td></tr>
+<tr><td>6</td><td>+3d</td><td>You're the chairman. Your agents are the team.</td><td>Human as Chairman</td></tr>
+<tr><td>7</td><td>+5d</td><td>First 48 hours: {X} users installed {Y} playbooks</td><td>Social proof</td></tr>
+<tr><td>8</td><td>+7d</td><td>Launch offer ends Friday</td><td>Urgency</td></tr>
+</tbody></table></div>
+
+<h2 id="style-150-250-words-short-paragraphs-arrow-bullets-one-cta-per-email-no-leverage-robust-seamless">Style: 150-250 words, short paragraphs, arrow bullets (→), one CTA per email. No "leverage/robust/seamless."</h2></section>
+<section id="corey-social-content" class="skill-section">
+<h2 class="skill-title">Social Content <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="platform-strategy">Platform Strategy</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Platform</th><th>Frequency</th><th>Voice</th></tr></thead><tbody>
+<tr><td>Twitter/X</td><td>2-3x/day</td><td>Punchy, provocative, meme-friendly</td></tr>
+<tr><td>LinkedIn</td><td>4x/week</td><td>Thoughtful, data-backed, personal</td></tr>
+<tr><td>Reddit</td><td>2x/week</td><td>Helpful, transparent, anti-promo</td></tr>
+<tr><td>Instagram</td><td>4x/week</td><td>Clean, educational, aspirational</td></tr>
+<tr><td>TikTok</td><td>3x/week</td><td>Energetic, demo-focused</td></tr>
+</tbody></table></div>
+
+<h2 id="pillars-educational-40-engagement-20-bts-15-social-proof-15-promo-10">Pillars: Educational 40% / Engagement 20% / BTS 15% / Social Proof 15% / Promo 10%</h2>
+
+<h2 id="hook-formulas-twitter">Hook Formulas (Twitter):</h2>
+<ul>
+<li>"Everyone's talking about [trend]. Nobody's mentioning [insight]."</li>
+<li>"I [unexpected thing]. Here's what happened:"</li>
+<li>"[Bold claim]. Here's the proof:"</li>
+<li>"Stop [common]. Start [better]. Here's why:"</li>
+</ul>
+
+<h2 id="5-ready-posts">5 Ready Posts:</h2>
+<ul>
+<li><strong>Twitter Thread:</strong> "AI Tool (L2): You type→response→do work. AI Agent (L3): Set rules→monitors→acts→you review. Most 'AI agents' are L2. SureThing is building L3."</li>
+<li><strong>LinkedIn:</strong> "Unpopular opinion: AI agents that can't post to social media are fancy chatbots. Claude Cowork? Zero social. SureThing? Twitter, Reddit, LinkedIn, TikTok, IG, YouTube."</li>
+<li><strong>Twitter:</strong> "This week my SureThing agent: →Triaged 47 emails →Posted to 4 platforms →Followed up 3 cold emails (2 replies) →Flagged competitor price change. Cost: $0.87/day."</li>
+<li><strong>Reddit r/SaaS:</strong> "Built an AI agent for business ops. Not a chatbot. Persistent memory, 1000+ apps, autonomous. AMA."</li>
+<li><strong>TikTok:</strong> "POV: You wake up and check your AI agent dashboard. 47 emails triaged. 4 posts published. 3 follow-ups sent. Time: 4 minutes. ☕"</li>
+</ul></section>
+<div class="category-header"><h3>Paid & Analytics</h3></div>
+<section id="corey-paid-ads" class="skill-section">
+<h2 class="skill-title">Paid Ads <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="platform-selection">Platform Selection</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Platform</th><th>Fit</th><th>Rationale</th></tr></thead><tbody>
+<tr><td>Meta (FB/IG)</td><td>🟢 High</td><td>Visual, broad reach, SaaS awareness</td></tr>
+<tr><td>Google Search</td><td>🟢 High</td><td>High-intent "ai agent" queries</td></tr>
+<tr><td>Reddit</td><td>🟢 High</td><td>ICP subreddits (r/SaaS, r/startups)</td></tr>
+<tr><td>Twitter/X</td><td>🟡 Medium</td><td>Tech audience, lower conversion</td></tr>
+<tr><td>LinkedIn</td><td>🟡 Medium</td><td>Professional founders, higher CPC</td></tr>
+</tbody></table></div>
+
+<h2 id="budget-allocation-3k-month">Budget Allocation ($3K/month)</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Channel</th><th>%</th><th>Monthly</th><th>Goal</th></tr></thead><tbody>
+<tr><td>Meta</td><td>40%</td><td>$1,200</td><td>Signups + awareness</td></tr>
+<tr><td>Google Search</td><td>30%</td><td>$900</td><td>High-intent capture</td></tr>
+<tr><td>Reddit</td><td>15%</td><td>$450</td><td>Community credibility</td></tr>
+<tr><td>Twitter</td><td>10%</td><td>$300</td><td>Engagement</td></tr>
+<tr><td>LinkedIn</td><td>5%</td><td>$150</td><td>Test</td></tr>
+</tbody></table></div>
+
+<h2 id="campaign-structure">Campaign Structure</h2>
+<pre><code>
+├── [Meta] Awareness: Category Definer / Competitor Displacement / Skill Install
+├── [Meta] Retargeting: Site visitors (7d) / Pricing visitors (30d)
+├── [Google] Brand: surething, sure thing ai
+├── [Google] Category: ai agent, autonomous ai assistant
+├── [Google] Competitor: lindy alternative, zapier alternative ai
+├── [Reddit] r/SaaS, r/Entrepreneur, r/ChatGPT
+└── [Twitter] Promoted tweets (3 variants)
+</code></pre>
+
+<h2 id="ad-copy-frameworks">Ad Copy Frameworks</h2>
+<p><strong>PAS:</strong> "Spending 3h/day on ops instead of building? Every AI tool resets the next day. SureThing remembers and works 24/7."</p>
+<p><strong>Before-After-Bridge:</strong> "Drowning in tasks → Wake up to triaged inbox, 5 posts published → SureThing"</p>
+
+<h2 id="prerequisite-install-tracking">⚠️ PREREQUISITE: Install Tracking</h2>
+<p>Must install BEFORE running ads: GTM, GA4, Meta Pixel, Reddit Pixel, Twitter Pixel. Currently zero tracking detected.</p>
+
+<h2 id="key-keyword-groups">Key Keyword Groups</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Group</th><th>Keywords</th><th>Match</th><th>Est. CPC</th></tr></thead><tbody>
+<tr><td>Brand</td><td>surething, sure thing ai</td><td>Exact</td><td>$0.50-1</td></tr>
+<tr><td>Category</td><td>ai agent platform, autonomous ai</td><td>Phrase</td><td>$3-5</td></tr>
+<tr><td>Problem</td><td>ai email management, automated posting</td><td>Broad</td><td>$2-4</td></tr>
+<tr><td>Competitor</td><td>lindy alternative, zapier alternative ai</td><td>Phrase</td><td>$4-7</td></tr>
+<tr><td>Use case</td><td>ai for solopreneurs, one person company ai</td><td>Phrase</td><td>$2-4</td></tr>
+</tbody></table></div>
+
+<p><strong>Negative keywords:</strong> free ai, ai art, ai image, chatbot builder, customer service ai, enterprise</p></section>
+<section id="corey-ad-creative" class="skill-section">
+<h2 class="skill-title">Ad Creative <span class="skill-badge">Corey Haines</span></h2>
+
+<h2 id="meta-ads-facebook-instagram">Meta Ads (Facebook/Instagram)</h2>
+
+<h3 id="ad-set-1-category-definer">Ad Set 1: Category Definer</h3>
+<p><strong>Headline:</strong> Shipping is solved. Running your company isn't.</p>
+<p><strong>Primary text:</strong> You built the product. Now who handles the emails, social media, follow-ups, and growth? SureThing's always-on AI agent does. Persistent memory. 1,000+ apps. Works while you sleep.</p>
+<p><strong>Description:</strong> Start free — no credit card</p>
+<p><strong>CTA button:</strong> Sign Up</p>
+<p><strong>Audience:</strong> Founders, solopreneurs, indie hackers | 25-45 | Interest: AI tools, startup, SaaS, indie hacking</p>
+<p><strong>Format:</strong> Single image (product screenshot with agent activity feed)</p>
+
+<h3 id="ad-set-2-competitor-displacement">Ad Set 2: Competitor Displacement</h3>
+<p><strong>Headline:</strong> Claude connects to everything. It still waits for you to ask.</p>
+<p><strong>Primary text:</strong> SureThing doesn't wait. It monitors your inbox at 3am. It posts to Twitter, LinkedIn, Reddit, TikTok, Instagram. It runs growth playbooks from top practitioners — autonomously. That's the difference between L2 and L3.</p>
+<p><strong>Description:</strong> The AI agent that acts, not just responds.</p>
+<p><strong>CTA button:</strong> Learn More</p>
+<p><strong>Audience:</strong> Claude/ChatGPT power users | Interest: Anthropic, OpenAI, AI productivity</p>
+<p><strong>Format:</strong> Carousel (slide 1: "What ChatGPT does" vs "What SureThing does")</p>
+
+<h3 id="ad-set-3-skill-install">Ad Set 3: Skill Install</h3>
+<p><strong>Headline:</strong> Every week a new AI skill drops. Install. Run. ROI.</p>
+<p><strong>Primary text:</strong> Stop tinkering with prompts. Top practitioners have already built the growth playbooks. Install them in one click. SureThing's self-evolving agents run them autonomously — and adapt to YOUR business.</p>
+<p><strong>Description:</strong> 1,000+ apps. Persistent memory. Zero babysitting.</p>
+<p><strong>CTA button:</strong> Sign Up</p>
+<p><strong>Audience:</strong> Growth marketers, SaaS founders | Interest: growth hacking, marketing automation</p>
+<p><strong>Format:</strong> Video (15s skill install animation)</p>
+
+<p><strong>A/B variants for each:</strong> Test headline-first vs benefit-first primary text. Test "Start free" vs "Try free" CTA.</p>
+
+<hr>
+
+<h2 id="google-search-ads-responsive-search-ads">Google Search Ads (Responsive Search Ads)</h2>
+
+<h3 id="rsa-1-brand-category">RSA 1: Brand + Category</h3>
+
+<p><strong>Headlines (15):</strong></p>
+<ul>
+<li>SureThing - AI Agent Platform</li>
+<li>Your AI Agent Works 24/7</li>
+<li>Run Your Company at Inference Speed</li>
+<li>AI That Remembers You</li>
+<li>1,000+ App Integrations</li>
+<li>Start Free - No Credit Card</li>
+<li>Persistent Memory AI Agent</li>
+<li>Autonomous Email Management</li>
+<li>AI Social Media Manager</li>
+<li>One Person Should Be Enough</li>
+<li>Self-Evolving AI Agents</li>
+<li>Works While You Sleep</li>
+<li>AI-Powered Growth Ops</li>
+<li>Install Growth Playbooks</li>
+<li>SOC II Certified & Secure</li>
+</ul>
+
+<p><strong>Descriptions (4):</strong></p>
+<ul>
+<li>SureThing handles email, social media, calendar & growth ops autonomously. Persistent memory. 1,000+ apps. Start free today.</li>
+<li>The AI agent that acts without being asked. Monitors inbox, posts to 5+ platforms, runs growth playbooks. Free forever plan available.</li>
+<li>Unlike ChatGPT, SureThing has persistent memory and works autonomously 24/7. Email, social, growth — all covered. Try free.</li>
+<li>Solo founders use SureThing to run operations at inference speed. Self-evolving agents, installable playbooks, zero babysitting.</li>
+</ul>
+
+<h3 id="keyword-groups">Keyword Groups</h3>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Group</th><th>Keywords</th><th>Match Type</th><th>Est. CPC</th></tr></thead><tbody>
+<tr><td>Brand</td><td>surething, sure thing ai, surething.io</td><td>Exact</td><td>$0.50-1.00</td></tr>
+<tr><td>Category</td><td>ai agent platform, personal ai agent, autonomous ai assistant</td><td>Phrase</td><td>$3-5</td></tr>
+<tr><td>Problem</td><td>ai email management, automated social media posting, ai workflow automation</td><td>Broad</td><td>$2-4</td></tr>
+<tr><td>Competitor</td><td>lindy ai alternative, zapier alternative ai, chatgpt alternative for business</td><td>Phrase</td><td>$4-7</td></tr>
+<tr><td>Use case</td><td>ai for solopreneurs, one person company ai, ai tools for founders</td><td>Phrase</td><td>$2-4</td></tr>
+</tbody></table></div>
+
+<p><strong>Negative keywords:</strong> free ai, ai art, ai image, ai writing tool, chatbot builder, customer service ai, enterprise ai platform</p>
+
+<hr>
+
+<h2 id="linkedin-ads">LinkedIn Ads</h2>
+
+<h3 id="sponsored-content-1">Sponsored Content 1</h3>
+<p><strong>Headline:</strong> Your AI workforce just shipped.</p>
+<p><strong>Body:</strong> Running a company solo? SureThing's autonomous AI agents handle email, social media, scheduling, and growth ops — with persistent memory across 1,000+ apps. You're the chairman. Your agents are the team.</p>
+<p><strong>CTA:</strong> Start Free</p>
+<p><strong>Audience:</strong> Job title: Founder, CEO, Co-founder, Solopreneur | Company size: 1-10 | Industry: Technology, SaaS</p>
+
+<h3 id="sponsored-content-2">Sponsored Content 2</h3>
+<p><strong>Headline:</strong> The playbooks that grew $1M companies — now one-click install.</p>
+<p><strong>Body:</strong> Top practitioners have open-sourced their growth strategies. SureThing lets you install them in one click, and self-evolving agents run them autonomously — adapted to your specific business context.</p>
+<p><strong>CTA:</strong> Learn More</p>
+<p><strong>Audience:</strong> Job title: Growth, Marketing, Founder | Company size: 1-50</p>
+
+<hr>
+
+<h2 id="twitter-x-ads">Twitter/X Ads</h2>
+
+<h3 id="promoted-tweet-1">Promoted Tweet 1</h3>
+<p>"I replaced 3 virtual assistants with one AI agent. It remembers everything, posts to 5 platforms, and works at 3am. $30/month. → surething.io"</p>
+
+<h3 id="promoted-tweet-2">Promoted Tweet 2</h3>
+<p>"Every Claude Cowork user right now: 'Wait, it can't post to Twitter?' Meanwhile SureThing: 🔄📱🐦 → surething.io"</p>
+
+<h3 id="promoted-tweet-3">Promoted Tweet 3</h3>
+<p>"Shipping is solved. Running your company isn't. That's why we built SureThing — the AI agent that actually runs parts of your business. Autonomous. 24/7. Self-evolving. → surething.io"</p>
+
+<hr>
+
+<h2 id="reddit-ads">Reddit Ads</h2>
+
+<h3 id="promoted-post-1-r-saas-r-entrepreneur-r-startups">Promoted Post 1 (r/SaaS, r/Entrepreneur, r/startups)</h3>
+<p><strong>Title:</strong> I built an AI agent that runs business ops autonomously. Not another chatbot. AMA.</p>
+<p><strong>Body:</strong> Solo founder here. Got tired of AI tools that reset every session and need me to type every command. Built SureThing — persistent memory, 1000+ app connections, social media posting, email triage, growth playbooks. Works while I sleep. Free to try.</p>
+
+<h3 id="promoted-post-2-r-chatgpt-r-claudeai-r-artificial">Promoted Post 2 (r/ChatGPT, r/ClaudeAI, r/artificial)</h3>
+<p><strong>Title:</strong> Honest comparison: Claude Cowork vs SureThing for daily workflow automation</p>
+<p><strong>Body:</strong> Tested both for 30 days. Claude Cowork: better Chrome extension, strong for research. SureThing: persistent memory, autonomous execution, social media posting (Claude has zero social integrations). Different tools for different jobs.</p>
+
+<hr>
+
+<h2 id="budget-allocation-recommendation-first-5k-month">Budget Allocation Recommendation (First $5K/month)</h2>
+
+<div class="table-wrap"><table>
+<thead><tr><th>Platform</th><th>%</th><th>Monthly</th><th>Goal</th></tr></thead><tbody>
+<tr><td>Meta Ads</td><td>40%</td><td>$2,000</td><td>Awareness + signups</td></tr>
+<tr><td>Google Search</td><td>30%</td><td>$1,500</td><td>High-intent capture</td></tr>
+<tr><td>Reddit</td><td>15%</td><td>$750</td><td>Community credibility</td></tr>
+<tr><td>Twitter</td><td>10%</td><td>$500</td><td>Engagement + awareness</td></tr>
+<tr><td>LinkedIn</td><td>5%</td><td>$250</td><td>Test professional audience</td></tr>
+</tbody></table></div>
+</section>
+<section id="corey-ab-test-setup" class="skill-section">
+<h2 class="skill-title">Ab Test Setup <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="prerequisite-install-analytics-first-zero-tracking-currently">Prerequisite: Install analytics first (zero tracking currently)</h2>
+
+<h2 id="test-1-homepage-headline">Test 1: Homepage Headline</h2>
+<p><strong>Hypothesis:</strong> Changing H1 from "remembers you and works while you sleep" to "Run your company at inference speed" will increase signup clicks by 30% because it communicates the outcome, not the mechanism.</p>
+<p><strong>Control:</strong> Current H1</p>
+<p><strong>Variants:</strong> A) "Run your entire company at inference speed" B) "One person should be enough" C) "Shipping is solved. Running your company isn't."</p>
+<p><strong>Metric:</strong> CTA click-through rate</p>
+<p><strong>Sample:</strong> 1,000 visitors per variant (4,000 total)</p>
+<p><strong>Duration:</strong> 2-4 weeks depending on traffic</p>
+
+<h2 id="test-2-cta-copy">Test 2: CTA Copy</h2>
+<p><strong>Hypothesis:</strong> Changing "Sign in with Google" to "Start free with Google" will increase clicks by 50% because it communicates value, not auth mechanism.</p>
+<p><strong>Control:</strong> "Sign in with Google"</p>
+<p><strong>Variant:</strong> "Start free with Google — no credit card"</p>
+<p><strong>Metric:</strong> Button clicks → signup completion</p>
+<p><strong>Sample:</strong> 500 per variant</p>
+
+<h2 id="test-3-social-proof-on-homepage">Test 3: Social Proof on Homepage</h2>
+<p><strong>Hypothesis:</strong> Adding "Join 500+ founders" near the CTA will increase signups by 20%</p>
+<p><strong>Test:</strong> With/without social proof line</p>
+<p><strong>Metric:</strong> Signup rate</p>
+
+<h2 id="test-4-pricing-anchor">Test 4: Pricing Anchor</h2>
+<p><strong>Hypothesis:</strong> Showing Pro tier first (high anchor) will increase Growth tier selection by 25%</p>
+<p><strong>Test:</strong> Current order vs reverse order</p>
+<p><strong>Metric:</strong> Plan selection rate</p>
+
+<h2 id="test-priority-cta-copy-2-headline-1-social-proof-3-pricing-4">Test Priority: CTA copy (#2) → Headline (#1) → Social proof (#3) → Pricing (#4)</h2></section>
+<section id="corey-analytics-tracking" class="skill-section">
+<h2 class="skill-title">Analytics Tracking <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="critical-zero-tracking-detected-no-ga4-gtm-meta-pixel-nothing">🔴 CRITICAL: Zero tracking detected. No GA4, GTM, Meta Pixel, nothing.</h2>
+
+<h2 id="tracking-plan-marketing-site">Tracking Plan (Marketing Site)</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Event</th><th>Properties</th><th>Priority</th></tr></thead><tbody>
+<tr><td>page_viewed</td><td>page_path, referrer, utm_*</td><td>🔴</td></tr>
+<tr><td>cta_clicked</td><td>cta_text, location, page</td><td>🔴</td></tr>
+<tr><td>signup_started</td><td>auth_method, referrer</td><td>🔴</td></tr>
+<tr><td>signup_completed</td><td>user_id, referrer, utm_*</td><td>🔴</td></tr>
+<tr><td>pricing_viewed</td><td>referrer</td><td>🔴</td></tr>
+</tbody></table></div>
+
+<h2 id="product-events">Product Events</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Event</th><th>Properties</th><th>Priority</th></tr></thead><tbody>
+<tr><td>gmail_connected</td><td>time_since_signup</td><td>🔴</td></tr>
+<tr><td>first_agent_action</td><td>action_type, time_since_signup</td><td>🔴</td></tr>
+<tr><td>skill_installed</td><td>skill_name</td><td>🔴</td></tr>
+<tr><td>credits_low</td><td>remaining, plan</td><td>🟡</td></tr>
+<tr><td>upgrade_completed</td><td>from_plan, to_plan, revenue</td><td>🔴</td></tr>
+</tbody></table></div>
+
+<h2 id="week-1-gtm-ga4-meta-pixel-conversion-tracking">Week 1: GTM + GA4 + Meta Pixel + conversion tracking</h2>
+<h2 id="week-2-custom-events-funnels-twitter-reddit-pixels">Week 2: Custom events, funnels, Twitter/Reddit pixels</h2>
+<h2 id="week-3-retention-cohorts-activation-funnel-credit-tracking">Week 3: Retention cohorts, activation funnel, credit tracking</h2>
+
+<h2 id="naming-object-action-lowercase-underscore-page-viewed-signup-completed">Naming: <code>object_action</code> lowercase underscore (page_viewed, signup_completed)</h2></section>
+<div class="category-header"><h3>Growth & Retention</h3></div>
+<section id="corey-referral-program" class="skill-section">
+<h2 class="skill-title">Referral Program <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="fit-8-10-natural-show-and-tell-moments-agent-stats-network-effects-more-users-more-playbooks">Fit: 8/10. Natural "show and tell" moments (agent stats). Network effects (more users = more playbooks).</h2>
+
+<h2 id="tier-1-user-referral">Tier 1: User Referral</h2>
+<ul>
+<li><strong>Mechanic:</strong> Give 2,000 credits, get 2,000 credits</li>
+<li><strong>Trigger moments:</strong> First autonomous action, milestone (100 emails), usage stats view</li>
+<li><strong>Share:</strong> Unique link (surething.io/r/{username}), stats card, Twitter/LinkedIn buttons</li>
+<li><strong>Stats card template:</strong> "📧 Emails: 1,247 | 📱 Posts: 89 | ⏰ Hours saved: 62 | Join → surething.io/r/{user}"</li>
+</ul>
+
+<h2 id="tier-2-affiliate-skill-makers">Tier 2: Affiliate (Skill Makers)</h2>
+<ul>
+<li><strong>Commission:</strong> 20% recurring / 12 months</li>
+<li><strong>Gate:</strong> 1+ published skill with 10+ installs</li>
+<li><strong>Tool:</strong> Cello Partner Referral ($300/mo, 50 affiliates max)</li>
+<li><strong>Timeline:</strong> Post 2.0 launch</li>
+</ul>
+
+<h2 id="targets-15-share-rate-40-referred-conversion-0-3-viral-coefficient-0-cac">Targets: 15% share rate, 40% referred conversion, 0.3 viral coefficient, ~$0 CAC</h2></section>
+<section id="corey-free-tool-strategy" class="skill-section">
+<h2 class="skill-title">Free Tool Strategy <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="tool-ideas">Tool Ideas</h2>
+
+<h3 id="1-ai-workflow-audit-tool-priority">1. AI Workflow Audit Tool (Priority: 🔴)</h3>
+<p><strong>What:</strong> User inputs their current tool stack → AI analyzes which workflows SureThing can automate</p>
+<p><strong>Lead capture:</strong> Email required to see full report</p>
+<p><strong>SEO value:</strong> "AI workflow audit", "automation audit tool"</p>
+<p><strong>Path to product:</strong> "Want to automate these? Start free with SureThing →"</p>
+
+<h3 id="2-ai-agent-roi-calculator-priority">2. AI Agent ROI Calculator (Priority: 🔴)</h3>
+<p><strong>What:</strong> Input: hours/week on email, social, follow-ups. Output: hours saved + $ saved vs VA cost</p>
+<p><strong>Lead capture:</strong> Optional email for detailed report</p>
+<p><strong>SEO value:</strong> "AI assistant ROI calculator", "VA vs AI cost"</p>
+<p><strong>Path to product:</strong> Results show SureThing pricing vs savings</p>
+
+<h3 id="3-social-media-content-repurposer-priority">3. Social Media Content Repurposer (Priority: 🟡)</h3>
+<p><strong>What:</strong> Paste a blog post → get 5 social post variants (Twitter, LinkedIn, etc.)</p>
+<p><strong>Lead capture:</strong> First 3 free, email for unlimited</p>
+<p><strong>SEO value:</strong> "AI social media repurposer"</p>
+<p><strong>Path to product:</strong> "Want these auto-posted across platforms? Try SureThing →"</p>
+
+<h3 id="4-email-triage-simulator-priority">4. Email Triage Simulator (Priority: 🟡)</h3>
+<p><strong>What:</strong> Connect Gmail (read-only) → AI shows how it would triage your inbox</p>
+<p><strong>Lead capture:</strong> Gmail OAuth = automatic signup pipeline</p>
+<p><strong>SEO value:</strong> "AI email triage", "email prioritization tool"</p>
+<p><strong>Path to product:</strong> "Like what you see? Turn on auto-triage →"</p>
+
+<h2 id="selection-start-with-1-workflow-audit-2-roi-calculator-lowest-build-effort-highest-lead-gen">Selection: Start with #1 (Workflow Audit) + #2 (ROI Calculator). Lowest build effort, highest lead gen.</h2></section>
+<section id="corey-churn-prevention" class="skill-section">
+<h2 class="skill-title">Churn Prevention <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="risk-signals">Risk Signals</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Signal</th><th>Risk Level</th><th>Intervention</th></tr></thead><tbody>
+<tr><td>No login for 7 days</td><td>🟡 Medium</td><td>Email: "Your agent misses you" + activity summary</td></tr>
+<tr><td>Credits unused (daily refresh wasted)</td><td>🟡 Medium</td><td>Push: "You have 150 unused credits today"</td></tr>
+<tr><td>No agent action for 3 days</td><td>🔴 High</td><td>Email: show what agent COULD be doing</td></tr>
+<tr><td>Visited pricing/downgrade page</td><td>🔴 High</td><td>In-app: "Talk to us before you go"</td></tr>
+<tr><td>Failed payment</td><td>🔴 Critical</td><td>Dunning sequence: 3 emails + in-app banner</td></tr>
+</tbody></table></div>
+
+<h2 id="cancel-flow">Cancel Flow</h2>
+<ul>
+<li><strong>Ask why</strong> (exit survey, 5 options)</li>
+<li><strong>Dynamic save offer</strong> based on reason:</li>
+<li>"Too expensive" → 30% off next month</li>
+<li>"Not using it" → Free setup call</li>
+<li>"Missing feature" → Roadmap preview</li>
+<li>"Switching to competitor" → Comparison + unique value</li>
+<li><strong>Confirm or save</strong> (clear choice, no dark patterns)</li>
+<li><strong>Offboarding email:</strong> "Your data is safe for 30 days. Come back anytime."</li>
+</ul>
+
+<h2 id="proactive-retention">Proactive Retention</h2>
+<ul>
+<li><strong>Weekly digest email:</strong> "Your agent this week: X emails, Y posts, Z follow-ups" (proves value)</li>
+<li><strong>Memory milestones:</strong> "Your agent has learned 500 things about you" (switching cost)</li>
+<li><strong>New feature announcements:</strong> Keep showing product evolution</li>
+<li><strong>Monthly ROI email:</strong> "SureThing saved you ~X hours and $Y this month"</li>
+</ul>
+
+<h2 id="health-score-0-100">Health Score (0-100)</h2>
+<ul>
+<li>Login frequency (25%)</li>
+<li>Agent actions/week (25%)</li>
+<li>Feature breadth (20%)</li>
+<li>Credit utilization (15%)</li>
+<li>Referral/sharing (15%)</li>
+</ul>
+<p>Green: >70 | Yellow: 40-70 | Red: <40</p></section>
+<section id="corey-marketing-ideas" class="skill-section">
+<h2 class="skill-title">Marketing Ideas <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="high-impact-low-effort">🔴 High Impact, Low Effort</h2>
+<ul>
+<li><strong>Daily "What My Agent Did" thread</strong> — auto-generated stats card, post to Twitter+LinkedIn</li>
+<li><strong>Integration directory SEO</strong> — /integrations/[app] pages for top 100 apps</li>
+<li><strong>Build in Public series</strong> — weekly growth metrics threads</li>
+<li><strong>5 comparison pages</strong> — vs Lindy/ChatGPT/Zapier/Okara/Claude Cowork</li>
+<li><strong>Product Hunt 2.0 launch</strong> — well-prepared = 1,000+ signups/day</li>
+</ul>
+
+<h2 id="high-impact-medium-effort">🟡 High Impact, Medium Effort</h2>
+<ul>
+<li><strong>Free AI workflow audit tool</strong> — upload tool stack, see what SureThing automates</li>
+<li><strong>"Playbook of the Week"</strong> — feature one community skill, cross-post everywhere</li>
+<li><strong>YouTube demo series</strong> — "Watch SureThing do X" for top use cases</li>
+<li><strong>Podcast tour</strong> — "Future of one-person companies" angle</li>
+<li><strong>Community Discord</strong> — users share playbooks, configs, tips</li>
+</ul>
+
+<h2 id="medium-impact-higher-effort">🟢 Medium Impact, Higher Effort</h2>
+<ul>
+<li><strong>Skill marketplace launch</strong> — HyperSkill "App Store for AI agents"</li>
+<li><strong>"One Person Company" annual report</strong> — survey-based, linkable asset</li>
+<li><strong>Tool partnerships</strong> — Stripe/Notion/Calendly co-marketing</li>
+<li><strong>Case study video series</strong> — real users, real setups, real results</li>
+<li><strong>Swipe file lead magnet</strong> — winning agent configs, downloadable</li>
+</ul></section>
+<section id="corey-marketing-psychology" class="skill-section">
+<h2 class="skill-title">Marketing Psychology <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="applied-models">Applied Models</h2>
+<ul>
+<li><strong>First Principles:</strong> SureThing = one person → operational capacity of a small team</li>
+<li><strong>JTBD:</strong> "Handle email without drowning" / "Post to 5 platforms" / "Execute growth I can't learn" / "Run ops while I build"</li>
+<li><strong>Loss Aversion:</strong> "Your agent learned 847 things about you. Don't let that reset." → upgrade</li>
+<li><strong>Social Proof:</strong> ZERO currently. Biggest psychological gap. Add: user count, testimonials, install stats.</li>
+<li><strong>Anchoring:</strong> Show Pro first → Growth feels reasonable. Compare to VA ($2,400/mo).</li>
+<li><strong>Commitment (Foot-in-Door):</strong> Connect Gmail (easy) → Set preferences → Connect Twitter → Invest enough to stick</li>
+<li><strong>IKEA Effect:</strong> Customizing agent (rules, skills, prefs) increases perceived value</li>
+<li><strong>Scarcity:</strong> "Launch week pricing ends Sunday." Daily credit refresh = "use or lose."</li>
+<li><strong>Authority:</strong> CASA+SOC II badges, KOL endorsements, investor backing</li>
+<li><strong>Paradox of Choice:</strong> Recommend ONE plan. Guide to ONE first action. Don't overwhelm.</li>
+</ul></section>
+<section id="corey-lead-magnets" class="skill-section">
+<h2 class="skill-title">Lead Magnets <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="lead-magnet-ideas">Lead Magnet Ideas</h2>
+
+<h3 id="1-the-ai-agent-starter-guide-pdf-email-course">1. "The AI Agent Starter Guide" (PDF/email course)</h3>
+<p><strong>Stage:</strong> Awareness</p>
+<p><strong>Content:</strong> What AI agents are, how they differ from chatbots, 5 workflows to automate first</p>
+<p><strong>Delivery:</strong> 5-email mini-course or downloadable PDF</p>
+<p><strong>Capture:</strong> Email on blog posts, homepage exit-intent</p>
+<p><strong>Path to product:</strong> Each email ends with "Try this in SureThing →"</p>
+
+<h3 id="2-the-one-person-company-playbook-pdf">2. "The One-Person Company Playbook" (PDF)</h3>
+<p><strong>Stage:</strong> Consideration</p>
+<p><strong>Content:</strong> How to run a company solo with AI: email, social, growth ops, scheduling</p>
+<p><strong>Delivery:</strong> PDF download</p>
+<p><strong>Capture:</strong> Dedicated landing page + blog CTAs</p>
+<p><strong>Path to product:</strong> Playbooks reference SureThing as the execution tool</p>
+
+<h3 id="3-ai-tool-stack-template-notion-spreadsheet">3. "AI Tool Stack Template" (Notion/Spreadsheet)</h3>
+<p><strong>Stage:</strong> Awareness</p>
+<p><strong>Content:</strong> Pre-built template showing optimal AI tool stack for solo founders</p>
+<p><strong>Delivery:</strong> Notion template link or Google Sheet</p>
+<p><strong>Capture:</strong> Email for access</p>
+<p><strong>Path to product:</strong> SureThing featured as the ops layer</p>
+
+<h3 id="4-growth-playbook-swipe-file-collection">4. "Growth Playbook Swipe File" (Collection)</h3>
+<p><strong>Stage:</strong> Consideration</p>
+<p><strong>Content:</strong> 10 proven growth playbooks from practitioners, formatted as SureThing skills</p>
+<p><strong>Delivery:</strong> Email series or downloadable collection</p>
+<p><strong>Capture:</strong> Email</p>
+<p><strong>Path to product:</strong> "Install these in SureThing with one click →"</p>
+
+<h2 id="priority-start-with-1-broadest-appeal-lowest-effort-2-strong-positioning">Priority: Start with #1 (broadest appeal, lowest effort) + #2 (strong positioning)</h2></section>
+<div class="category-header"><h3>Sales & GTM</h3></div>
+<section id="corey-revops" class="skill-section">
+<h2 class="skill-title">Revops <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="lead-lifecycle-for-surething">Lead Lifecycle for SureThing</h2>
+<pre><code>
+Visitor → Free Signup → Activated User → Engaged User → Upgrade Intent → Paid Customer → Expansion
+</code></pre>
+
+<h3 id="stage-definitions">Stage Definitions</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Stage</th><th>Criteria</th><th>Metric</th></tr></thead><tbody>
+<tr><td>Visitor</td><td>On marketing site</td><td>Pageviews, sessions</td></tr>
+<tr><td>Free Signup</td><td>Created account</td><td>Signups/week</td></tr>
+<tr><td>Activated</td><td>Connected Gmail + first agent action</td><td>Activation rate</td></tr>
+<tr><td>Engaged</td><td>Using agent 3+ days/week</td><td>DAU/WAU</td></tr>
+<tr><td>Upgrade Intent</td><td>Viewed pricing, hit credit limits</td><td>Upgrade page views</td></tr>
+<tr><td>Paid</td><td>Subscribed to any paid plan</td><td>MRR</td></tr>
+<tr><td>Expansion</td><td>Upgraded to higher tier</td><td>Net revenue expansion</td></tr>
+</tbody></table></div>
+
+<h3 id="funnel-targets">Funnel Targets</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Conversion</th><th>Target</th></tr></thead><tbody>
+<tr><td>Visit → Signup</td><td>5-8%</td></tr>
+<tr><td>Signup → Activated</td><td>60%+</td></tr>
+<tr><td>Activated → Engaged (30d)</td><td>40%+</td></tr>
+<tr><td>Engaged → Paid</td><td>10-15%</td></tr>
+<tr><td>Paid → Expansion (90d)</td><td>20%+</td></tr>
+</tbody></table></div>
+
+<h2 id="credit-based-revenue-operations">Credit-Based Revenue Operations</h2>
+<ul>
+<li>Track credit consumption velocity (predictive upgrade signal)</li>
+<li>Auto-trigger upgrade prompt at 80% usage</li>
+<li>Monitor daily refresh utilization (wasted credits = churn risk)</li>
+<li>Calculate revenue per credit to optimize pricing</li>
+</ul>
+
+<h2 id="no-crm-needed-initially-use-product-analytics-posthog-billing-stripe-as-source-of-truth">No CRM needed initially — use product analytics (PostHog) + billing (Stripe) as source of truth</h2></section>
+<section id="corey-sales-enablement" class="skill-section">
+<h2 class="skill-title">Sales Enablement <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="note-surething-is-primarily-plg-product-led-growth-not-sales-led-but-sales-enablement-is-needed-for">Note: SureThing is primarily PLG (product-led growth), not sales-led. But sales enablement is needed for:</h2>
+<ul>
+<li>Enterprise/custom inquiries</li>
+<li>Partnership conversations</li>
+<li>KOL/skill creator recruitment</li>
+<li>Press/media interactions</li>
+</ul>
+
+<h2 id="one-pager-template">One-Pager Template</h2>
+<pre><code>
+SURETHING — One-Pager
+━━━━━━━━━━━━━━━━━━━━
+THE PROBLEM
+You're the bottleneck in your own AI stack. Every tool resets. Nothing works without you typing.
+
+THE SOLUTION
+SureThing: autonomous AI agents with persistent memory across 1,000+ apps.
+
+HOW IT WORKS
+1. Connect your apps (Gmail, social media, CRM)
+2. Install growth playbooks from top practitioners
+3. Your agents run autonomously — 24/7
+
+KEY DIFFERENTIATORS
+→ Persistent memory (no context resets)
+→ Social media distribution (all platforms)
+→ Self-evolving agents
+→ Community playbook marketplace
+
+TRACTION
+[User count] | [Credits consumed] | [Playbooks installed]
+
+SECURITY
+Google CASA Tier 2 | SOC II | 28-day refund
+
+PRICING
+Free forever | From $29/mo paid
+
+→ surething.io
+</code></pre>
+
+<h2 id="objection-handling">Objection Handling</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Objection</th><th>Response</th></tr></thead><tbody>
+<tr><td>"How is this different from ChatGPT?"</td><td>ChatGPT resets, can't act autonomously, zero social media. SureThing remembers and works 24/7.</td></tr>
+<tr><td>"What about data safety?"</td><td>CASA Tier 2 + SOC II. Enterprise-grade.</td></tr>
+<tr><td>"Why credits instead of flat pricing?"</td><td>Credits scale with actual usage. You pay for what you use. Free tier lets you try everything.</td></tr>
+<tr><td>"Can it handle [specific task]?"</td><td>1,000+ app integrations. If the app has an API, SureThing can connect.</td></tr>
+</tbody></table></div></section>
+<section id="corey-launch-strategy" class="skill-section">
+<h2 class="skill-title">Launch Strategy <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="orb-framework-owned-website-email-blog-discord-rented-twitter-linkedin-reddit-tiktok-ig-meta-ads-borrowed-ph-kols-press-podcasts">ORB Framework: Owned (website, email, blog, Discord) + Rented (Twitter, LinkedIn, Reddit, TikTok, IG, Meta Ads) + Borrowed (PH, KOLs, press, podcasts)</h2>
+
+<h2 id="five-phase-plan">Five-Phase Plan</h2>
+<h3 id="phase-1-w-4-finalize-features-rebuild-homepage-install-tracking-internal-dogfooding">Phase 1 (W-4): Finalize features, rebuild homepage, install tracking, internal dogfooding</h3>
+<h3 id="phase-2-w-3-alpha-20-power-users-collect-testimonials-start-daily-social-content-publish-3-blog-posts">Phase 2 (W-3): Alpha (20 power users), collect testimonials, start daily social content, publish 3 blog posts</h3>
+<h3 id="phase-3-w-2-beta-100-500-waitlist-teaser-email-video-brief-kols-create-comparison-pages">Phase 3 (W-2): Beta (100-500 waitlist), teaser email+video, brief KOLs, create comparison pages</h3>
+<h3 id="phase-4-w-1-emails-2-3-prep-ph-assets-schedule-social-coordinate-kol-posts-set-up-retargeting">Phase 4 (W-1): Emails #2+#3, prep PH assets, schedule social, coordinate KOL posts, set up retargeting</h3>
+<h3 id="phase-5-launch-week">Phase 5 (Launch Week):</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Day</th><th>Action</th></tr></thead><tbody>
+<tr><td>Mon</td><td>PH launch 12:01AM PST. Email #4. Social blitz. All hands on PH comments.</td></tr>
+<tr><td>Tue</td><td>Email #5 (Playbooks). Reddit AMA. Activate retargeting.</td></tr>
+<tr><td>Wed</td><td>Twitter Spaces. LinkedIn deep-dive.</td></tr>
+<tr><td>Thu</td><td>Email #6 (Human as Chairman). TikTok compilation.</td></tr>
+<tr><td>Fri</td><td>Email #7 (social proof). Launch offer deadline.</td></tr>
+<tr><td>Sun</td><td>Email #8 (urgency close).</td></tr>
+</tbody></table></div>
+
+<h2 id="ph-strategy-tagline-the-ai-agent-that-runs-your-company-while-you-sleep-90s-demo-video-founder-replies-to-every-comment-for-48h">PH Strategy: Tagline "The AI agent that runs your company while you sleep." 90s demo video. Founder replies to EVERY comment for 48h.</h2>
+
+<h2 id="kpis-ph-top-5-1-000-signups-10-000-visits-35-email-open-500k-social-impressions-5-free-paid-30d">KPIs: PH top 5, 1,000+ signups, 10,000+ visits, 35%+ email open, 500K+ social impressions, 5%+ free→paid (30d)</h2></section>
+<section id="corey-pricing-strategy" class="skill-section">
+<h2 class="skill-title">Pricing Strategy <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="current-credit-based-free-basic-30-plus-60-150-pro-200-10k">Current: Credit-based (Free/Basic $30/Plus $60-150/Pro $200-10K)</h2>
+
+<h2 id="issues">Issues</h2>
+<ul>
+<li>Plus range too wide ($60-150) — split into distinct tiers</li>
+<li>Pro range absurd ($200-10K) — feels enterprise, not self-serve</li>
+<li>Feature differentiation unclear between tiers</li>
+<li>No annual discount visible</li>
+<li>No "Most Popular" anchor</li>
+<li>Credits are abstract — don't map to outcomes</li>
+</ul>
+
+<h2 id="recommended-restructure">Recommended Restructure</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Tier</th><th>Price</th><th>Credits</th><th>Gate</th></tr></thead><tbody>
+<tr><td>Free</td><td>$0</td><td>150/day</td><td>1 agent, basic skills</td></tr>
+<tr><td>Starter</td><td>$29/mo</td><td>6K/mo</td><td>Unlimited agents, social, all skills</td></tr>
+<tr><td>Growth ⭐</td><td>$79/mo</td><td>20K/mo</td><td>Priority execution, advanced playbooks</td></tr>
+<tr><td>Scale</td><td>$199/mo</td><td>60K/mo</td><td>Agent swarm, custom playbooks</td></tr>
+<tr><td>Enterprise</td><td>Contact</td><td>Custom</td><td>SLA, dedicated support</td></tr>
+</tbody></table></div>
+
+<h2 id="psychology-fixes">Psychology Fixes</h2>
+<ul>
+<li>Show Pro/Scale first → anchoring makes Growth feel reasonable</li>
+<li>"Most Popular" badge on Growth</li>
+<li>Compare to VA cost ($2,400/mo) on pricing page</li>
+<li>Add credit calculator: "What can I do with X credits?"</li>
+<li>Annual billing: 20% discount</li>
+<li>Trust badges (CASA, SOC II, 28-day refund) on pricing page</li>
+</ul></section>
+<section id="corey-competitor-alternatives" class="skill-section">
+<h2 class="skill-title">Competitor Alternatives <span class="skill-badge">Corey Haines</span></h2>
+<h2 id="pages-to-create-5-comparison-pages">Pages to Create (5 comparison pages)</h2>
+
+<h3 id="vs-lindy-surething-vs-lindy">/vs/lindy — SureThing vs Lindy</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Feature</th><th>SureThing</th><th>Lindy</th></tr></thead><tbody>
+<tr><td>Email management</td><td>✅</td><td>✅ Core feature</td></tr>
+<tr><td>Calendar</td><td>✅</td><td>✅ Core feature</td></tr>
+<tr><td>Social media posting</td><td>✅ All platforms</td><td>❌</td></tr>
+<tr><td>Persistent memory</td><td>✅ Cross-session</td><td>❌</td></tr>
+<tr><td>Autonomous execution</td><td>✅ 24/7</td><td>⚠️ Limited</td></tr>
+<tr><td>Growth playbooks</td><td>✅</td><td>❌</td></tr>
+<tr><td>Self-evolving</td><td>✅</td><td>❌</td></tr>
+<tr><td>Free tier</td><td>✅ 150/day</td><td>⚠️ Limited trial</td></tr>
+<tr><td>Price</td><td>From $30/mo</td><td>From $49/mo</td></tr>
+</tbody></table></div>
+
+<h3 id="vs-chatgpt-surething-vs-chatgpt">/vs/chatgpt — SureThing vs ChatGPT</h3>
+<div class="table-wrap"><table>
+<thead><tr><th></th><th>SureThing</th><th>ChatGPT</th></tr></thead><tbody>
+<tr><td>Memory</td><td>✅ Persistent</td><td>⚠️ Resets</td></tr>
+<tr><td>Autonomous</td><td>✅ 24/7</td><td>❌ Prompt-required</td></tr>
+<tr><td>1000+ apps</td><td>✅</td><td>⚠️ GPT plugins</td></tr>
+<tr><td>Social media</td><td>✅</td><td>❌</td></tr>
+<tr><td>Email</td><td>✅ Gmail</td><td>❌</td></tr>
+</tbody></table></div>
+
+<h3 id="vs-zapier-surething-vs-zapier">/vs/zapier — SureThing vs Zapier</h3>
+<div class="table-wrap"><table>
+<thead><tr><th></th><th>SureThing</th><th>Zapier</th></tr></thead><tbody>
+<tr><td>Intelligence</td><td>✅ AI judgment</td><td>❌ Rule-based</td></tr>
+<tr><td>Memory</td><td>✅</td><td>❌</td></tr>
+<tr><td>Adaptability</td><td>✅ Self-evolving</td><td>❌ Static</td></tr>
+<tr><td>Setup</td><td>Conversational</td><td>Visual builder</td></tr>
+</tbody></table></div>
+
+<h3 id="vs-claude-cowork-surething-vs-claude-cowork">/vs/claude-cowork — SureThing vs Claude Cowork</h3>
+<div class="table-wrap"><table>
+<thead><tr><th></th><th>SureThing</th><th>Claude Cowork</th></tr></thead><tbody>
+<tr><td>Social media</td><td>✅ ALL platforms</td><td>❌ Zero</td></tr>
+<tr><td>Memory</td><td>✅ Persistent</td><td>❌ Stateless</td></tr>
+<tr><td>Autonomous</td><td>✅ 24/7</td><td>❌ Human-initiated</td></tr>
+<tr><td>Chrome ext</td><td>❌</td><td>✅</td></tr>
+<tr><td>Mobile</td><td>✅ iOS+Android</td><td>✅</td></tr>
+</tbody></table></div>
+
+<p><strong>Key insight:</strong> Anthropic is structurally blocked from social APIs — brand safety + cost. This gap is permanent.</p>
+
+<h3 id="vs-okara-surething-vs-okara">/vs/okara — SureThing vs Okara</h3>
+<div class="table-wrap"><table>
+<thead><tr><th></th><th>SureThing</th><th>Okara</th></tr></thead><tbody>
+<tr><td>Agent type</td><td>Self-evolving, personalized</td><td>Hardcoded, standardized</td></tr>
+<tr><td>Playbooks</td><td>Community-contributed</td><td>Official-only</td></tr>
+<tr><td>Memory</td><td>✅ Persistent</td><td>❌</td></tr>
+<tr><td>Social</td><td>✅ All platforms</td><td>⚠️ Limited</td></tr>
+<tr><td>Scale problem</td><td>✅ Diversity preserved</td><td>❌ Homogeneous at scale</td></tr>
+</tbody></table></div></section>
+<section class="section section-divider"><h2>Part 2: AI Marketing Claude (13)</h2><p>Source: <a href="https://github.com/husnainfareed/ai-marketing-claude">ai-marketing-claude</a></p></section>
+<section id="claude-01-marketing-audit" class="skill-section">
+<h2 class="skill-title">Marketing Audit <span class="skill-badge badge-claude">AI Marketing Claude</span></h2>
+<h1 id="01-marketing-audit">01 Marketing Audit</h1>
+<p><strong>Target:</strong> surething.io | <strong>Date:</strong> 2026-03-23</p>
+
+<hr>
+
+<p>Failed after 3 attempts: HTTP 403: error code: 1010</p></section>
+<section id="claude-02-copy-analysis" class="skill-section">
+<h2 class="skill-title">Copy Analysis <span class="skill-badge badge-claude">AI Marketing Claude</span></h2>
+<h1 id="02-copy-analysis">02 Copy Analysis</h1>
+<p><strong>Target:</strong> surething.io | <strong>Date:</strong> 2026-03-23</p>
+
+<hr>
+
+<p>Failed after 3 attempts: HTTP 403: error code: 1010</p></section>
+<section id="claude-03-seo-audit" class="skill-section">
+<h2 class="skill-title">SEO Audit <span class="skill-badge badge-claude">AI Marketing Claude</span></h2>
+<h1 id="03-seo-audit">03 Seo Audit</h1>
+<p><strong>Target:</strong> surething.io | <strong>Date:</strong> 2026-03-23</p>
+
+<hr>
+
+<p>Failed after 3 attempts: HTTP 403: error code: 1010</p></section>
+<section id="claude-04-brand-voice" class="skill-section">
+<h2 class="skill-title">Brand Voice <span class="skill-badge badge-claude">AI Marketing Claude</span></h2>
+<h1 id="04-brand-voice">04 Brand Voice</h1>
+<p><strong>Target:</strong> surething.io | <strong>Date:</strong> 2026-03-23</p>
+
+<hr>
+
+<p>Failed after 3 attempts: HTTP 403: error code: 1010</p></section>
+<section id="claude-05-landing-cro" class="skill-section">
+<h2 class="skill-title">Landing Page CRO <span class="skill-badge badge-claude">AI Marketing Claude</span></h2>
+<h1 id="05-landing-cro">05 Landing Cro</h1>
+<p><strong>Target:</strong> surething.io | <strong>Date:</strong> 2026-03-23</p>
+
+<hr>
+
+<p>Failed after 3 attempts: HTTP 403: error code: 1010</p></section>
+<section id="claude-06-funnel-analysis" class="skill-section">
+<h2 class="skill-title">Funnel Analysis <span class="skill-badge badge-claude">AI Marketing Claude</span></h2>
+<h1 id="06-funnel-analysis">06 Funnel Analysis</h1>
+
+<p><strong>Target:</strong> surething.io</p>
+<p><strong>Date:</strong> 2026-03-23</p>
+
+<hr>
+
+<p>Error running 06-FUNNEL-ANALYSIS: HTTP 403: error code: 1010</p></section>
+<section id="claude-07-competitor-intelligence" class="skill-section">
+<h2 class="skill-title">Competitor Intelligence <span class="skill-badge badge-claude">AI Marketing Claude</span></h2>
+<h1 id="07-competitor-intelligence">07 Competitor Intelligence</h1>
+
+<p><strong>Target:</strong> surething.io</p>
+<p><strong>Date:</strong> 2026-03-23</p>
+
+<hr>
+
+<p>Error running 07-COMPETITOR-INTELLIGENCE: HTTP 403: error code: 1010</p></section>
+<section id="claude-08-ad-campaigns" class="skill-section">
+<h2 class="skill-title">Ad Campaigns <span class="skill-badge badge-claude">AI Marketing Claude</span></h2>
+<h1 id="08-ad-campaigns">08 Ad Campaigns</h1>
+
+<p><strong>Target:</strong> surething.io</p>
+<p><strong>Date:</strong> 2026-03-23</p>
+
+<hr>
+
+<p>Error running 08-AD-CAMPAIGNS: HTTP 403: error code: 1010</p></section>
+<section id="claude-09-email-sequences" class="skill-section">
+<h2 class="skill-title">Email Sequences <span class="skill-badge badge-claude">AI Marketing Claude</span></h2>
+<h1 id="09-email-sequences">09 Email Sequences</h1>
+
+<p><strong>Target:</strong> surething.io</p>
+<p><strong>Date:</strong> 2026-03-23</p>
+
+<hr>
+
+<p>Error running 09-EMAIL-SEQUENCES: HTTP 403: error code: 1010</p></section>
+<section id="claude-10-social-calendar" class="skill-section">
+<h2 class="skill-title">Social Calendar <span class="skill-badge badge-claude">AI Marketing Claude</span></h2>
+<h1 id="10-social-calendar">10 Social Calendar</h1>
+
+<p><strong>Target:</strong> surething.io</p>
+<p><strong>Date:</strong> 2026-03-23</p>
+
+<hr>
+
+<p>Error running 10-SOCIAL-CALENDAR: HTTP 403: error code: 1010</p></section>
+<section id="claude-11-launch-playbook" class="skill-section">
+<h2 class="skill-title">Launch Playbook <span class="skill-badge badge-claude">AI Marketing Claude</span></h2>
+<h1 id="11-launch-playbook">11 Launch Playbook</h1>
+
+<p><strong>Target:</strong> surething.io</p>
+<p><strong>Date:</strong> 2026-03-23</p>
+
+<hr>
+
+<p>Error running 11-LAUNCH-PLAYBOOK: HTTP 403: error code: 1010</p></section>
+<section id="claude-12-proposal-template" class="skill-section">
+<h2 class="skill-title">Proposal Template <span class="skill-badge badge-claude">AI Marketing Claude</span></h2>
+<h1 id="12-proposal-template">12 Proposal Template</h1>
+
+<p><strong>Target:</strong> surething.io</p>
+<p><strong>Date:</strong> 2026-03-23</p>
+
+<hr>
+
+<p>Error running 12-PROPOSAL-TEMPLATE: HTTP 403: error code: 1010</p></section>
+<section id="claude-13-marketing-report" class="skill-section">
+<h2 class="skill-title">Marketing Report <span class="skill-badge badge-claude">AI Marketing Claude</span></h2>
+<h1 id="13-marketing-report">13 Marketing Report</h1>
+
+<p><strong>Target:</strong> surething.io</p>
+<p><strong>Date:</strong> 2026-03-23</p>
+
+<hr>
+
+<p>Error running 13-MARKETING-REPORT: HTTP 403: error code: 1010</p></section>
+</main>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      document.querySelectorAll('.nav-link').forEach(l => l.style.color = '');
+      const link = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+      if (link) link.style.color = '#a78bfa';
+    }
+  });
+}, { threshold: 0.1, rootMargin: '-100px 0px -80% 0px' });
+document.querySelectorAll('section[id], .skill-section[id]').forEach(s => observer.observe(s));
+</script>
+</body>
+</html>
